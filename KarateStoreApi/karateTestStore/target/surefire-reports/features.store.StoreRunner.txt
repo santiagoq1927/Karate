@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: features.store.StoreRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.336 s - in features.store.StoreRunner

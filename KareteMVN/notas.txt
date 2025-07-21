@@ -1,0 +1,9 @@
+mvn archetype:generate -DarchetypeGroupId=io.karatelabs -DarchetypeArtifactId=karate-archetype -DarchetypeVersion=1.5.1 -DgroupId=com.test -DartifactId=karateTestStore
+
+Define value for property 'version' 1.0-SNAPSHOT
+
+
+
+mvn clean test
+mvn clean test -Dtest=PetsRunner
+mvn clean test -Dtest=TestRunner

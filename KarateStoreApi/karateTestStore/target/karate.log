@@ -1,0 +1,30 @@
+14:39:10.376 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:39:11.795 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:39:12.243 [main] DEBUG com.intuit.karate - request:
+1 > POST https://fakestoreapi.com/products
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 132
+1 > Host: fakestoreapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.3.1)
+1 > Accept-Encoding: gzip,deflate
+{"id":0,"title":"Play 4","price":2000000,"description":"Video game console","category":"Video games","image":"http:\/\/example.com"}
+
+14:39:20.699 [main] DEBUG com.intuit.karate - response time in milliseconds: 8456
+1 < 200
+1 < Date: Thu, 27 Mar 2025 19:39:14 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cf-Ray: 92715a483f3045f2-MIA
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"83-O4CXg4r37b18aNjT3IF6rkXy1WA"
+1 < X-Powered-By: Express
+1 < Cf-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=LlGwS45azO0TjqeP72i91TEl0QLDpxrGn0Qe5QdW7Q4%2F3c3ShTSKVK11u%2FkGDhwZOWH07pWAZut8yonHVmR46iDXNhyCQ4EvE5utcoqW5K8YuXQ78JeuXEKf1RR10XFvsCzE"}],"group":"cf-nel","max_age":604800}
+1 < Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < alt-svc: h3=":443"; ma=86400
+1 < server-timing: cfL4;desc="?proto=TCP&rtt=145352&min_rtt=143641&rtt_var=55088&sent=7&recv=6&lost=0&retrans=0&sent_bytes=3127&recv_bytes=971&delivery_rate=30492&cwnd=252&unsent_bytes=0&cid=39be6ef07c2e3662&ts=803&x=0"
+{"id":21,"title":"Play 4","price":2000000,"description":"Video game console","image":"http://example.com","category":"Video games"}
+
