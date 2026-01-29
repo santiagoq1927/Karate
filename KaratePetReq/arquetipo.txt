@@ -1,0 +1,10 @@
+mvn archetype:generate \
+-DarchetypeGroupId=io.karatelabs \
+-DarchetypeArtifactId=karate-archetype \
+-DarchetypeVersion=1.5.1 \
+-DgroupId=com.mycompany \
+-DartifactId=karate-test-automation
+
+______________________________-
+corre los test en command promtp
+mvn clean test

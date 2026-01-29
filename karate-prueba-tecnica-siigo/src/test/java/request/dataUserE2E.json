@@ -1,0 +1,16 @@
+{
+  "login": {
+    "email": "eve.holt@reqres.in",
+    "password": "cityslicka"
+  },
+  "addUser": {
+    "email":"david@gmail.com",
+    "first_name":"david",
+    "last_name":"quiijano"
+  },
+  "updateUser": {
+    "email":"luis@gmail.com",
+    "first_name":"luis",
+    "last_name":"diaz"
+  }
+}

@@ -1,0 +1,2984 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"89a2931a-c677-4f98-8907-608cb7c6aac5",karate_version:"1.5.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>examples.reqres.usersReqRes</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">8</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-01-28 06:15:53 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:8]"><span>[1:8]</span> <span>get all user</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:15]"><span>[2:15]</span> <span>get user for id</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3.1:35]"><span>[3.1:35]</span> <span>add user</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3.2:36]"><span>[3.2:36]</span> <span>add user</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3.3:37]"><span>[3.3:37]</span> <span>add user</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:39]"><span>[4:39]</span> <span>update user</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:50]"><span>[5:50]</span> <span>delete user</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[6:56]"><span>[6:56]</span> <span>Login user</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">examples/reqres/usersReqRes.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">management user in Reqres</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:8]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:8]</span>
+                <span class="scenario-name">get all user</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>822</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:8]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def keyApi = &#39;reqres_8f192310fbe2489fa420a96aed225016&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">18:15:49.168 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header x-api-key = keyApi</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://reqres.in/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def page = 1</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">785</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">18:15:49.512 request:
+1 &gt; GET https://reqres.in/api/users
+1 &gt; x-api-key: reqres_8f192310fbe2489fa420a96aed225016
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.3.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:15:49.968 response time in milliseconds: 453
+1 &lt; 200
+1 &lt; Date: Wed, 28 Jan 2026 23:15:49 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+1 &lt; Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 &lt; Access-Control-Allow-Origin: http://localhost:5173
+1 &lt; Etag: W/&quot;5a7-KB797kCNL4AhRSo+9eAIQ0h96+0&quot;
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+1 &lt; Ratelimit-Limit: 20
+1 &lt; Ratelimit-Policy: 20;w=60
+1 &lt; Ratelimit-Remaining: 19
+1 &lt; Ratelimit-Reset: 60
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=4ofJD%2FWjU3kL2lu415CwFi0AjGYXlAgH%2FjRV3zBxdvQ%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1769635458&quot;}],&quot;max_age&quot;:3600}
+1 &lt; Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=4ofJD%2FWjU3kL2lu415CwFi0AjGYXlAgH%2FjRV3zBxdvQ%3D&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;ts=1769635458&quot;
+1 &lt; Server: cloudflare
+1 &lt; Vary: Origin, accept-encoding
+1 &lt; Via: 1.1 heroku-router
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Powered-By: ReqRes.in - Deploy backends in 30 seconds
+1 &lt; X-Ratelimit-Limit: 100
+1 &lt; X-Ratelimit-Remaining: 99
+1 &lt; X-Ratelimit-Reset: 1769644800
+1 &lt; X-Reqres-Docs: https://reqres.in
+1 &lt; X-Reqres-Message: This API is powered by ReqRes. Deploy your own backend in 30 seconds!
+1 &lt; X-Reqres-Templates: https://app.reqres.in/templates
+1 &lt; X-Reqres-Upgrade: https://app.reqres.in/upgrade
+1 &lt; X-Request-Id: db3a07d2-86a7-907b-a10c-d9c0bab573fd
+1 &lt; X-Robots-Tag: noindex, nofollow
+1 &lt; X-Xss-Protection: 1; mode=block
+1 &lt; Age: 6690
+1 &lt; Cache-Control: max-age=14400
+1 &lt; cf-cache-status: HIT
+1 &lt; CF-RAY: 9c5431aa79c5dafd-MIA
+{&quot;page&quot;:1,&quot;per_page&quot;:6,&quot;total&quot;:12,&quot;total_pages&quot;:2,&quot;data&quot;:[{&quot;id&quot;:1,&quot;email&quot;:&quot;george.bluth@reqres.in&quot;,&quot;first_name&quot;:&quot;George&quot;,&quot;last_name&quot;:&quot;Bluth&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/1-image.jpg&quot;},{&quot;id&quot;:2,&quot;email&quot;:&quot;janet.weaver@reqres.in&quot;,&quot;first_name&quot;:&quot;Janet&quot;,&quot;last_name&quot;:&quot;Weaver&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/2-image.jpg&quot;},{&quot;id&quot;:3,&quot;email&quot;:&quot;emma.wong@reqres.in&quot;,&quot;first_name&quot;:&quot;Emma&quot;,&quot;last_name&quot;:&quot;Wong&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/3-image.jpg&quot;},{&quot;id&quot;:4,&quot;email&quot;:&quot;eve.holt@reqres.in&quot;,&quot;first_name&quot;:&quot;Eve&quot;,&quot;last_name&quot;:&quot;Holt&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/4-image.jpg&quot;},{&quot;id&quot;:5,&quot;email&quot;:&quot;charles.morris@reqres.in&quot;,&quot;first_name&quot;:&quot;Charles&quot;,&quot;last_name&quot;:&quot;Morris&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/5-image.jpg&quot;},{&quot;id&quot;:6,&quot;email&quot;:&quot;tracey.ramos@reqres.in&quot;,&quot;first_name&quot;:&quot;Tracey&quot;,&quot;last_name&quot;:&quot;Ramos&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/6-image.jpg&quot;}],&quot;support&quot;:{&quot;url&quot;:&quot;https://contentcaddy.io?utm_source=reqres&amp;utm_medium=json&amp;utm_campaign=referral&quot;,&quot;text&quot;:&quot;Tired of writing endless social media content? Let Content Caddy generate it for you.&quot;},&quot;_meta&quot;:{&quot;powered_by&quot;:&quot;ReqRes&quot;,&quot;docs_url&quot;:&quot;https://app.reqres.in/documentation&quot;,&quot;upgrade_url&quot;:&quot;https://app.reqres.in/upgrade&quot;,&quot;example_url&quot;:&quot;https://app.reqres.in/examples/notes-app&quot;,&quot;variant&quot;:&quot;v1_a&quot;,&quot;message&quot;:&quot;Classic ReqRes still works. Projects add persistence, auth, and logs.&quot;,&quot;cta&quot;:{&quot;label&quot;:&quot;See example app&quot;,&quot;url&quot;:&quot;https://app.reqres.in/examples/notes-app&quot;},&quot;context&quot;:&quot;legacy_success&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.page == page</span>
+      </div>
+    </div>
+    <div class="time-cell passed">28</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:15]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:15]</span>
+                <span class="scenario-name">get user for id</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>257</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:15]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def keyApi = &#39;reqres_8f192310fbe2489fa420a96aed225016&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">18:15:50.050 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header x-api-key = keyApi</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://reqres.in/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def id = 2</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users&#39;, id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">237</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18">18:15:50.070 request:
+1 &gt; GET https://reqres.in/api/users/2
+1 &gt; x-api-key: reqres_8f192310fbe2489fa420a96aed225016
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.3.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:15:50.305 response time in milliseconds: 233
+1 &lt; 200
+1 &lt; Date: Wed, 28 Jan 2026 23:15:49 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+1 &lt; Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 &lt; Access-Control-Allow-Origin: http://localhost:5173
+1 &lt; etag: W/&quot;2db-kbMaZEe/ijpvoRgLMye1Nr/BtfQ&quot;
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+1 &lt; Ratelimit-Limit: 20
+1 &lt; Ratelimit-Policy: 20;w=60
+1 &lt; Ratelimit-Remaining: 19
+1 &lt; Ratelimit-Reset: 60
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=Rd1t8G%2BxFjbssMKz%2F%2FAJc23b7Z7eXI0PjgUdgyymAAQ%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1769542384&quot;}],&quot;max_age&quot;:3600}
+1 &lt; Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=Rd1t8G%2BxFjbssMKz%2F%2FAJc23b7Z7eXI0PjgUdgyymAAQ%3D&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;ts=1769542384&quot;
+1 &lt; Server: cloudflare
+1 &lt; Vary: Origin, accept-encoding
+1 &lt; Via: 1.1 heroku-router
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Powered-By: ReqRes.in - Deploy backends in 30 seconds
+1 &lt; X-Ratelimit-Limit: 100
+1 &lt; X-Ratelimit-Remaining: 95
+1 &lt; X-Ratelimit-Reset: 1769558400
+1 &lt; X-Reqres-Docs: https://reqres.in
+1 &lt; X-Reqres-Message: This API is powered by ReqRes. Deploy your own backend in 30 seconds!
+1 &lt; X-Reqres-Templates: https://app.reqres.in/templates
+1 &lt; X-Reqres-Upgrade: https://app.reqres.in/upgrade
+1 &lt; X-Request-Id: 0512ae93-07e0-5bbe-5fd2-e8b32db64bd7
+1 &lt; X-Robots-Tag: noindex, nofollow
+1 &lt; X-Xss-Protection: 1; mode=block
+1 &lt; Age: 3363
+1 &lt; Cache-Control: max-age=14400
+1 &lt; cf-cache-status: HIT
+1 &lt; CF-RAY: 9c5431acaabd20ce-MIA
+{&quot;data&quot;:{&quot;id&quot;:2,&quot;email&quot;:&quot;janet.weaver@reqres.in&quot;,&quot;first_name&quot;:&quot;Janet&quot;,&quot;last_name&quot;:&quot;Weaver&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/2-image.jpg&quot;},&quot;support&quot;:{&quot;url&quot;:&quot;https://contentcaddy.io?utm_source=reqres&amp;utm_medium=json&amp;utm_campaign=referral&quot;,&quot;text&quot;:&quot;Tired of writing endless social media content? Let Content Caddy generate it for you.&quot;},&quot;_meta&quot;:{&quot;powered_by&quot;:&quot;ReqRes&quot;,&quot;docs_url&quot;:&quot;https://app.reqres.in/documentation&quot;,&quot;upgrade_url&quot;:&quot;https://app.reqres.in/upgrade&quot;,&quot;example_url&quot;:&quot;https://app.reqres.in/examples/notes-app&quot;,&quot;variant&quot;:&quot;v1_a&quot;,&quot;message&quot;:&quot;Classic ReqRes still works. Projects add persistence, auth, and logs.&quot;,&quot;cta&quot;:{&quot;label&quot;:&quot;See example app&quot;,&quot;url&quot;:&quot;https://app.reqres.in/examples/notes-app&quot;},&quot;context&quot;:&quot;legacy_success&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data.id == id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3.1:35]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3.1:35]</span>
+                <span class="scenario-name">add user</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>515</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3.1:35]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3.1:35]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def keyApi = &#39;reqres_8f192310fbe2489fa420a96aed225016&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4">18:15:50.325 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3.1:35]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header x-api-key = keyApi</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3.1:35]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://reqres.in/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def bodyCreateUser = read(&#39;classpath:request/bodyAddUser.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def responseCreateUser = read(&#39;classpath:response/responseCreateUser.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">13</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>bodyCreateUser.email = &#39;david@correo.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>bodyCreateUser.first_name = &#39;David&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>bodyCreateUser.last_name = &#39;Perez&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyCreateUser</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">485</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.30">18:15:50.406 request:
+1 &gt; POST https://reqres.in/api/users
+1 &gt; x-api-key: reqres_8f192310fbe2489fa420a96aed225016
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 69
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.3.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;david@correo.com&quot;,&quot;first_name&quot;:&quot;David&quot;,&quot;last_name&quot;:&quot;Perez&quot;}
+
+18:15:50.838 response time in milliseconds: 429
+1 &lt; 201
+1 &lt; Date: Wed, 28 Jan 2026 23:15:50 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 512
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+1 &lt; Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 &lt; Access-Control-Allow-Origin: http://localhost:5173
+1 &lt; Etag: W/&quot;200-SQSkDHkudKCP6y9IPPje1ZVKsGw&quot;
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+1 &lt; Ratelimit-Limit: 20
+1 &lt; Ratelimit-Policy: 20;w=60
+1 &lt; Ratelimit-Remaining: 19
+1 &lt; Ratelimit-Reset: 60
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=o4rzadMtzSmVgm99Q0QNm3h1MRm6mh1x076P7nH9e%2Fs%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1769642150&quot;}],&quot;max_age&quot;:3600}
+1 &lt; Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=o4rzadMtzSmVgm99Q0QNm3h1MRm6mh1x076P7nH9e%2Fs%3D&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;ts=1769642150&quot;
+1 &lt; Server: cloudflare
+1 &lt; Vary: Origin
+1 &lt; Via: 1.1 heroku-router
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Powered-By: ReqRes.in - Deploy backends in 30 seconds
+1 &lt; X-Ratelimit-Limit: 100
+1 &lt; X-Ratelimit-Remaining: 57
+1 &lt; X-Ratelimit-Reset: 1769644800
+1 &lt; X-Reqres-Docs: https://reqres.in
+1 &lt; X-Reqres-Message: This API is powered by ReqRes. Deploy your own backend in 30 seconds!
+1 &lt; X-Reqres-Templates: https://app.reqres.in/templates
+1 &lt; X-Reqres-Upgrade: https://app.reqres.in/upgrade
+1 &lt; X-Request-Id: c33d55db-828c-8c55-8c0f-3ad297585076
+1 &lt; X-Robots-Tag: noindex, nofollow
+1 &lt; X-Xss-Protection: 1; mode=block
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; CF-RAY: 9c5431aebbe5dfe6-MIA
+{&quot;email&quot;:&quot;david@correo.com&quot;,&quot;first_name&quot;:&quot;David&quot;,&quot;last_name&quot;:&quot;Perez&quot;,&quot;id&quot;:&quot;887&quot;,&quot;createdAt&quot;:&quot;2026-01-28T23:15:50.360Z&quot;,&quot;_meta&quot;:{&quot;powered_by&quot;:&quot;ReqRes&quot;,&quot;docs_url&quot;:&quot;https://app.reqres.in/documentation&quot;,&quot;upgrade_url&quot;:&quot;https://app.reqres.in/upgrade&quot;,&quot;example_url&quot;:&quot;https://app.reqres.in/examples/notes-app&quot;,&quot;variant&quot;:&quot;v1_a&quot;,&quot;message&quot;:&quot;Classic ReqRes still works. Projects add persistence, auth, and logs.&quot;,&quot;cta&quot;:{&quot;label&quot;:&quot;See example app&quot;,&quot;url&quot;:&quot;https://app.reqres.in/examples/notes-app&quot;},&quot;context&quot;:&quot;legacy_success&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == responseCreateUser</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3.2:36]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3.2:36]</span>
+                <span class="scenario-name">add user</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>446</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3.2:36]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3.2:36]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def keyApi = &#39;reqres_8f192310fbe2489fa420a96aed225016&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.4">18:15:50.855 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3.2:36]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header x-api-key = keyApi</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3.2:36]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://reqres.in/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def bodyCreateUser = read(&#39;classpath:request/bodyAddUser.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def responseCreateUser = read(&#39;classpath:response/responseCreateUser.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>bodyCreateUser.email = &#39;santiago@correo.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>bodyCreateUser.first_name = &#39;Santiago&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>bodyCreateUser.last_name = &#39;Quijano&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyCreateUser</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">440</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.30">18:15:50.865 request:
+1 &gt; POST https://reqres.in/api/users
+1 &gt; x-api-key: reqres_8f192310fbe2489fa420a96aed225016
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 77
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.3.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;santiago@correo.com&quot;,&quot;first_name&quot;:&quot;Santiago&quot;,&quot;last_name&quot;:&quot;Quijano&quot;}
+
+18:15:51.301 response time in milliseconds: 435
+1 &lt; 201
+1 &lt; Date: Wed, 28 Jan 2026 23:15:50 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 520
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+1 &lt; Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 &lt; Access-Control-Allow-Origin: http://localhost:5173
+1 &lt; Etag: W/&quot;208-sMsKrFMzDnGlaPdLF/xDEWP0kaI&quot;
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+1 &lt; Ratelimit-Limit: 20
+1 &lt; Ratelimit-Policy: 20;w=60
+1 &lt; Ratelimit-Remaining: 19
+1 &lt; Ratelimit-Reset: 60
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=o4rzadMtzSmVgm99Q0QNm3h1MRm6mh1x076P7nH9e%2Fs%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1769642150&quot;}],&quot;max_age&quot;:3600}
+1 &lt; Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=o4rzadMtzSmVgm99Q0QNm3h1MRm6mh1x076P7nH9e%2Fs%3D&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;ts=1769642150&quot;
+1 &lt; Server: cloudflare
+1 &lt; Vary: Origin
+1 &lt; Via: 1.1 heroku-router
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Powered-By: ReqRes.in - Deploy backends in 30 seconds
+1 &lt; X-Ratelimit-Limit: 100
+1 &lt; X-Ratelimit-Remaining: 56
+1 &lt; X-Ratelimit-Reset: 1769644800
+1 &lt; X-Reqres-Docs: https://reqres.in
+1 &lt; X-Reqres-Message: This API is powered by ReqRes. Deploy your own backend in 30 seconds!
+1 &lt; X-Reqres-Templates: https://app.reqres.in/templates
+1 &lt; X-Reqres-Upgrade: https://app.reqres.in/upgrade
+1 &lt; X-Request-Id: 7a5a8831-f559-179a-3583-99ec80e6b006
+1 &lt; X-Robots-Tag: noindex, nofollow
+1 &lt; X-Xss-Protection: 1; mode=block
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; CF-RAY: 9c5431b1af28da17-MIA
+{&quot;email&quot;:&quot;santiago@correo.com&quot;,&quot;first_name&quot;:&quot;Santiago&quot;,&quot;last_name&quot;:&quot;Quijano&quot;,&quot;id&quot;:&quot;547&quot;,&quot;createdAt&quot;:&quot;2026-01-28T23:15:50.825Z&quot;,&quot;_meta&quot;:{&quot;powered_by&quot;:&quot;ReqRes&quot;,&quot;docs_url&quot;:&quot;https://app.reqres.in/documentation&quot;,&quot;upgrade_url&quot;:&quot;https://app.reqres.in/upgrade&quot;,&quot;example_url&quot;:&quot;https://app.reqres.in/examples/notes-app&quot;,&quot;variant&quot;:&quot;v1_a&quot;,&quot;message&quot;:&quot;Classic ReqRes still works. Projects add persistence, auth, and logs.&quot;,&quot;cta&quot;:{&quot;label&quot;:&quot;See example app&quot;,&quot;url&quot;:&quot;https://app.reqres.in/examples/notes-app&quot;},&quot;context&quot;:&quot;legacy_success&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == responseCreateUser</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3.3:37]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3.3:37]</span>
+                <span class="scenario-name">add user</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>433</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3.3:37]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3.3:37]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def keyApi = &#39;reqres_8f192310fbe2489fa420a96aed225016&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.4">18:15:51.313 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3.3:37]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header x-api-key = keyApi</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3.3:37]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://reqres.in/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def bodyCreateUser = read(&#39;classpath:request/bodyAddUser.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def responseCreateUser = read(&#39;classpath:response/responseCreateUser.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>bodyCreateUser.email = &#39;daniela@correo.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>bodyCreateUser.first_name = &#39;Daniela&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>bodyCreateUser.last_name = &#39;Velasco&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyCreateUser</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">427</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.30">18:15:51.323 request:
+1 &gt; POST https://reqres.in/api/users
+1 &gt; x-api-key: reqres_8f192310fbe2489fa420a96aed225016
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 75
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.3.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;daniela@correo.com&quot;,&quot;first_name&quot;:&quot;Daniela&quot;,&quot;last_name&quot;:&quot;Velasco&quot;}
+
+18:15:51.747 response time in milliseconds: 423
+1 &lt; 201
+1 &lt; Date: Wed, 28 Jan 2026 23:15:51 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 518
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+1 &lt; Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 &lt; Access-Control-Allow-Origin: http://localhost:5173
+1 &lt; Etag: W/&quot;206-acO10t3KXHX6YKAWfg6PpW0PcwI&quot;
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+1 &lt; Ratelimit-Limit: 20
+1 &lt; Ratelimit-Policy: 20;w=60
+1 &lt; Ratelimit-Remaining: 19
+1 &lt; Ratelimit-Reset: 60
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=XsP57QRBd5sxt6LI2PEPSTTHownljpK6%2FmWqlg07HwA%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1769642151&quot;}],&quot;max_age&quot;:3600}
+1 &lt; Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=XsP57QRBd5sxt6LI2PEPSTTHownljpK6%2FmWqlg07HwA%3D&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;ts=1769642151&quot;
+1 &lt; Server: cloudflare
+1 &lt; Vary: Origin
+1 &lt; Via: 1.1 heroku-router
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Powered-By: ReqRes.in - Deploy backends in 30 seconds
+1 &lt; X-Ratelimit-Limit: 100
+1 &lt; X-Ratelimit-Remaining: 55
+1 &lt; X-Ratelimit-Reset: 1769644800
+1 &lt; X-Reqres-Docs: https://reqres.in
+1 &lt; X-Reqres-Message: This API is powered by ReqRes. Deploy your own backend in 30 seconds!
+1 &lt; X-Reqres-Templates: https://app.reqres.in/templates
+1 &lt; X-Reqres-Upgrade: https://app.reqres.in/upgrade
+1 &lt; X-Request-Id: 96cd3c35-3c68-7d31-7f43-d7fd2c5cdce7
+1 &lt; X-Robots-Tag: noindex, nofollow
+1 &lt; X-Xss-Protection: 1; mode=block
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; CF-RAY: 9c5431b47fb951d9-MIA
+{&quot;email&quot;:&quot;daniela@correo.com&quot;,&quot;first_name&quot;:&quot;Daniela&quot;,&quot;last_name&quot;:&quot;Velasco&quot;,&quot;id&quot;:&quot;883&quot;,&quot;createdAt&quot;:&quot;2026-01-28T23:15:51.273Z&quot;,&quot;_meta&quot;:{&quot;powered_by&quot;:&quot;ReqRes&quot;,&quot;docs_url&quot;:&quot;https://app.reqres.in/documentation&quot;,&quot;upgrade_url&quot;:&quot;https://app.reqres.in/upgrade&quot;,&quot;example_url&quot;:&quot;https://app.reqres.in/examples/notes-app&quot;,&quot;variant&quot;:&quot;v1_a&quot;,&quot;message&quot;:&quot;Classic ReqRes still works. Projects add persistence, auth, and logs.&quot;,&quot;cta&quot;:{&quot;label&quot;:&quot;See example app&quot;,&quot;url&quot;:&quot;https://app.reqres.in/examples/notes-app&quot;},&quot;context&quot;:&quot;legacy_success&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == responseCreateUser</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:39]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:39]</span>
+                <span class="scenario-name">update user</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>450</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:39]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:39]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def keyApi = &#39;reqres_8f192310fbe2489fa420a96aed225016&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">18:15:51.758 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:39]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header x-api-key = keyApi</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:39]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://reqres.in/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def bodyUpdateUser = read(&#39;classpath:request/bodyUser.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def id = 3</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users&#39;, id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyUpdateUser</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell passed">438</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.44">18:15:51.770 request:
+1 &gt; PUT https://reqres.in/api/users/3
+1 &gt; x-api-key: reqres_8f192310fbe2489fa420a96aed225016
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 70
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.3.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;david@gmail.com&quot;,&quot;first_name&quot;:&quot;David&quot;,&quot;last_name&quot;:&quot;Velasco&quot;}
+
+18:15:52.206 response time in milliseconds: 434
+1 &lt; 200
+1 &lt; Date: Wed, 28 Jan 2026 23:15:51 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+1 &lt; Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 &lt; Access-Control-Allow-Origin: http://localhost:5173
+1 &lt; Etag: W/&quot;1f6-C04nVfBUqh7RNwhK0qdQdpS3v+E&quot;
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+1 &lt; Ratelimit-Limit: 20
+1 &lt; Ratelimit-Policy: 20;w=60
+1 &lt; Ratelimit-Remaining: 19
+1 &lt; Ratelimit-Reset: 60
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=XsP57QRBd5sxt6LI2PEPSTTHownljpK6%2FmWqlg07HwA%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1769642151&quot;}],&quot;max_age&quot;:3600}
+1 &lt; Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=XsP57QRBd5sxt6LI2PEPSTTHownljpK6%2FmWqlg07HwA%3D&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;ts=1769642151&quot;
+1 &lt; Server: cloudflare
+1 &lt; Vary: Origin, accept-encoding
+1 &lt; Via: 1.1 heroku-router
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Powered-By: ReqRes.in - Deploy backends in 30 seconds
+1 &lt; X-Ratelimit-Limit: 100
+1 &lt; X-Ratelimit-Remaining: 54
+1 &lt; X-Ratelimit-Reset: 1769644800
+1 &lt; X-Reqres-Docs: https://reqres.in
+1 &lt; X-Reqres-Message: This API is powered by ReqRes. Deploy your own backend in 30 seconds!
+1 &lt; X-Reqres-Templates: https://app.reqres.in/templates
+1 &lt; X-Reqres-Upgrade: https://app.reqres.in/upgrade
+1 &lt; X-Request-Id: 4cc98558-90e3-54c9-62b5-b2d473aa1fdb
+1 &lt; X-Robots-Tag: noindex, nofollow
+1 &lt; X-Xss-Protection: 1; mode=block
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; CF-RAY: 9c5431b7592bd965-MIA
+{&quot;email&quot;:&quot;david@gmail.com&quot;,&quot;first_name&quot;:&quot;David&quot;,&quot;last_name&quot;:&quot;Velasco&quot;,&quot;updatedAt&quot;:&quot;2026-01-28T23:15:51.728Z&quot;,&quot;_meta&quot;:{&quot;powered_by&quot;:&quot;ReqRes&quot;,&quot;docs_url&quot;:&quot;https://app.reqres.in/documentation&quot;,&quot;upgrade_url&quot;:&quot;https://app.reqres.in/upgrade&quot;,&quot;example_url&quot;:&quot;https://app.reqres.in/examples/notes-app&quot;,&quot;variant&quot;:&quot;v1_a&quot;,&quot;message&quot;:&quot;Classic ReqRes still works. Projects add persistence, auth, and logs.&quot;,&quot;cta&quot;:{&quot;label&quot;:&quot;See example app&quot;,&quot;url&quot;:&quot;https://app.reqres.in/examples/notes-app&quot;},&quot;context&quot;:&quot;legacy_success&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.email == bodyUpdateUser.email</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.first_name == bodyUpdateUser.first_name</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.last_name == bodyUpdateUser.last_name</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:50]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:50]</span>
+                <span class="scenario-name">delete user</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>446</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:50]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:50]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def keyApi = &#39;reqres_8f192310fbe2489fa420a96aed225016&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">18:15:52.220 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:50]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header x-api-key = keyApi</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:50]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://reqres.in/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.51">
+      <div class="step-ref passed">51</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def id = 4</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.52">
+      <div class="step-ref passed">52</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users&#39;, id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.53">
+      <div class="step-ref passed">53</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">442</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.53">18:15:52.228 request:
+1 &gt; DELETE https://reqres.in/api/users/4
+1 &gt; x-api-key: reqres_8f192310fbe2489fa420a96aed225016
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.3.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:15:52.667 response time in milliseconds: 437
+1 &lt; 204
+1 &lt; Date: Wed, 28 Jan 2026 23:15:52 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+1 &lt; Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 &lt; Access-Control-Allow-Origin: http://localhost:5173
+1 &lt; Etag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+1 &lt; Ratelimit-Limit: 20
+1 &lt; Ratelimit-Policy: 20;w=60
+1 &lt; Ratelimit-Remaining: 19
+1 &lt; Ratelimit-Reset: 60
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=iU3drs%2FjlwMo9%2FzoAbDDVUIrqcqt4VjXK8RM5QWaiWo%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1769642152&quot;}],&quot;max_age&quot;:3600}
+1 &lt; Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=iU3drs%2FjlwMo9%2FzoAbDDVUIrqcqt4VjXK8RM5QWaiWo%3D&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;ts=1769642152&quot;
+1 &lt; Server: cloudflare
+1 &lt; Vary: Origin
+1 &lt; Via: 1.1 heroku-router
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Powered-By: ReqRes.in - Deploy backends in 30 seconds
+1 &lt; X-Ratelimit-Limit: 100
+1 &lt; X-Ratelimit-Remaining: 53
+1 &lt; X-Ratelimit-Reset: 1769644800
+1 &lt; X-Reqres-Docs: https://reqres.in
+1 &lt; X-Reqres-Message: This API is powered by ReqRes. Deploy your own backend in 30 seconds!
+1 &lt; X-Reqres-Templates: https://app.reqres.in/templates
+1 &lt; X-Reqres-Upgrade: https://app.reqres.in/upgrade
+1 &lt; X-Request-Id: 3ec73689-4a41-a5b6-0745-979def45ce6c
+1 &lt; X-Robots-Tag: noindex, nofollow
+1 &lt; X-Xss-Protection: 1; mode=block
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; CF-RAY: 9c5431ba29676c88-MIA
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 204</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:56]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:56]</span>
+                <span class="scenario-name">Login user</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>338</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[6:56]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[6:56]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def keyApi = &#39;reqres_8f192310fbe2489fa420a96aed225016&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">18:15:52.680 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:56]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header x-api-key = keyApi</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:56]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://reqres.in/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def bodyCredentials = read(&#39;classpath:request/credentialsUser.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.58">
+      <div class="step-ref passed">58</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyCredentials</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">333</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.60">18:15:52.689 request:
+1 &gt; POST https://reqres.in/api/login
+1 &gt; x-api-key: reqres_8f192310fbe2489fa420a96aed225016
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 54
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.3.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;eve.holt@reqres.in&quot;,&quot;password&quot;:&quot;cityslicka&quot;}
+
+18:15:53.019 response time in milliseconds: 328
+1 &lt; 200
+1 &lt; Date: Wed, 28 Jan 2026 23:15:52 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+1 &lt; Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 &lt; Access-Control-Allow-Origin: http://localhost:5173
+1 &lt; Etag: W/&quot;1a6-OPYOvhNlJBNDjBInPmPS5KSNydc&quot;
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=iU3drs%2FjlwMo9%2FzoAbDDVUIrqcqt4VjXK8RM5QWaiWo%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1769642152&quot;}],&quot;max_age&quot;:3600}
+1 &lt; Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=iU3drs%2FjlwMo9%2FzoAbDDVUIrqcqt4VjXK8RM5QWaiWo%3D&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;ts=1769642152&quot;
+1 &lt; Server: cloudflare
+1 &lt; Vary: Origin
+1 &lt; Via: 1.1 heroku-router
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Powered-By: ReqRes.in - Deploy backends in 30 seconds
+1 &lt; X-Ratelimit-Limit: 100
+1 &lt; X-Ratelimit-Remaining: 52
+1 &lt; X-Ratelimit-Reset: 1769644800
+1 &lt; X-Reqres-Docs: https://reqres.in
+1 &lt; X-Reqres-Message: This API is powered by ReqRes. Deploy your own backend in 30 seconds!
+1 &lt; X-Reqres-Templates: https://app.reqres.in/templates
+1 &lt; X-Reqres-Upgrade: https://app.reqres.in/upgrade
+1 &lt; X-Request-Id: 1f83a234-539a-f078-c31a-1fc449966edc
+1 &lt; X-Robots-Tag: noindex, nofollow
+1 &lt; X-Xss-Protection: 1; mode=block
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; CF-RAY: 9c5431bcfab4b3e3-MIA
+{&quot;token&quot;:&quot;QpwL5tke4Pnpja7X4&quot;,&quot;_meta&quot;:{&quot;powered_by&quot;:&quot;ReqRes&quot;,&quot;docs_url&quot;:&quot;https://app.reqres.in/documentation&quot;,&quot;upgrade_url&quot;:&quot;https://app.reqres.in/upgrade&quot;,&quot;example_url&quot;:&quot;https://app.reqres.in/examples/notes-app&quot;,&quot;variant&quot;:&quot;v1_a&quot;,&quot;message&quot;:&quot;Classic ReqRes still works. Projects add persistence, auth, and logs.&quot;,&quot;cta&quot;:{&quot;label&quot;:&quot;See example app&quot;,&quot;url&quot;:&quot;https://app.reqres.in/examples/notes-app&quot;},&quot;context&quot;:&quot;legacy_success&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

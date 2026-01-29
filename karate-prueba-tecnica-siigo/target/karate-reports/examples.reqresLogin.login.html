@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"89a2931a-c677-4f98-8907-608cb7c6aac5",karate_version:"1.5.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>examples.reqresLogin.login</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">3</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-01-28 07:42:30 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:8]"><span>[1:8]</span> <span>Login user success</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2.1:29]"><span>[2.1:29]</span> <span>Login user no success</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2.2:30]"><span>[2.2:30]</span> <span>Login user no success</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">examples/reqresLogin/login.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">management user in Reqres</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:8]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:8]</span>
+                <span class="scenario-name">Login user success</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1023</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:8]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def keyApi = keyAccess</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">19:42:28.824 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header x-api-key = keyApi</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def bodyCredentials = read(&#39;classpath:request/credentialsUser.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">72</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>bodyCredentials.email = &quot;eve.holt@reqres.in&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>bodyCredentials.password = &quot;cityslicka&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyCredentials</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">926</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">19:42:29.251 request:
+1 &gt; POST https://reqres.in/api/login
+1 &gt; x-api-key: reqres_8f192310fbe2489fa420a96aed225016
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 54
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.3.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;eve.holt@reqres.in&quot;,&quot;password&quot;:&quot;cityslicka&quot;}
+
+19:42:29.870 response time in milliseconds: 615
+1 &lt; 200
+1 &lt; Date: Thu, 29 Jan 2026 00:42:29 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+1 &lt; Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 &lt; Access-Control-Allow-Origin: http://localhost:5173
+1 &lt; Etag: W/&quot;1a6-OPYOvhNlJBNDjBInPmPS5KSNydc&quot;
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=Q1u0KprLeEeNH5FBFpPFb4%2F0BokHwoUVSAzRZpW1nes%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1769647349&quot;}],&quot;max_age&quot;:3600}
+1 &lt; Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=Q1u0KprLeEeNH5FBFpPFb4%2F0BokHwoUVSAzRZpW1nes%3D&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;ts=1769647349&quot;
+1 &lt; Server: cloudflare
+1 &lt; Vary: Origin
+1 &lt; Via: 1.1 heroku-router
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Powered-By: ReqRes.in - Deploy backends in 30 seconds
+1 &lt; X-Ratelimit-Limit: 100
+1 &lt; X-Ratelimit-Remaining: 52
+1 &lt; X-Ratelimit-Reset: 1769731200
+1 &lt; X-Reqres-Docs: https://reqres.in
+1 &lt; X-Reqres-Message: This API is powered by ReqRes. Deploy your own backend in 30 seconds!
+1 &lt; X-Reqres-Templates: https://app.reqres.in/templates
+1 &lt; X-Reqres-Upgrade: https://app.reqres.in/upgrade
+1 &lt; X-Request-Id: 60534bfa-3110-4f47-e3f2-47bae31fbd38
+1 &lt; X-Robots-Tag: noindex, nofollow
+1 &lt; X-Xss-Protection: 1; mode=block
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; CF-RAY: 9c54b09e9beeb805-MIA
+{&quot;token&quot;:&quot;QpwL5tke4Pnpja7X4&quot;,&quot;_meta&quot;:{&quot;powered_by&quot;:&quot;ReqRes&quot;,&quot;docs_url&quot;:&quot;https://app.reqres.in/documentation&quot;,&quot;upgrade_url&quot;:&quot;https://app.reqres.in/upgrade&quot;,&quot;example_url&quot;:&quot;https://app.reqres.in/examples/notes-app&quot;,&quot;variant&quot;:&quot;v1_a&quot;,&quot;message&quot;:&quot;Classic ReqRes still works. Projects add persistence, auth, and logs.&quot;,&quot;cta&quot;:{&quot;label&quot;:&quot;See example app&quot;,&quot;url&quot;:&quot;https://app.reqres.in/examples/notes-app&quot;},&quot;context&quot;:&quot;legacy_success&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.token == &#39;#present&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">18</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.1:29]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.1:29]</span>
+                <span class="scenario-name">Login user no success</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>430</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2.1:29]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2.1:29]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def keyApi = keyAccess</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4">19:42:29.912 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.1:29]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header x-api-key = keyApi</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.1:29]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def bodyCredentials = read(&#39;classpath:request/credentialsUser.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>bodyCredentials.email = &#39;&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>bodyCredentials.password = &#39;cityslicka&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyCredentials</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">422</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.24">19:42:29.924 request:
+1 &gt; POST https://reqres.in/api/login
+1 &gt; x-api-key: reqres_8f192310fbe2489fa420a96aed225016
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 36
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.3.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;&quot;,&quot;password&quot;:&quot;cityslicka&quot;}
+
+19:42:30.343 response time in milliseconds: 417
+1 &lt; 400
+1 &lt; Date: Thu, 29 Jan 2026 00:42:30 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 37
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+1 &lt; Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 &lt; Access-Control-Allow-Origin: http://localhost:5173
+1 &lt; Etag: W/&quot;25-Ik70kof1lbc973ShN5FoVPxYn7A&quot;
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=ddFJDypUwfewGSx2pM0g33Jjq%2Br887grFcp8uBWxEWs%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1769647350&quot;}],&quot;max_age&quot;:3600}
+1 &lt; Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=ddFJDypUwfewGSx2pM0g33Jjq%2Br887grFcp8uBWxEWs%3D&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;ts=1769647350&quot;
+1 &lt; Server: cloudflare
+1 &lt; Vary: Origin
+1 &lt; Via: 1.1 heroku-router
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Powered-By: ReqRes.in - Deploy backends in 30 seconds
+1 &lt; X-Ratelimit-Limit: 100
+1 &lt; X-Ratelimit-Remaining: 51
+1 &lt; X-Ratelimit-Reset: 1769731200
+1 &lt; X-Reqres-Docs: https://reqres.in
+1 &lt; X-Reqres-Message: This API is powered by ReqRes. Deploy your own backend in 30 seconds!
+1 &lt; X-Reqres-Templates: https://app.reqres.in/templates
+1 &lt; X-Reqres-Upgrade: https://app.reqres.in/upgrade
+1 &lt; X-Request-Id: dfc63373-a6f9-3e91-6d94-1729f98041fa
+1 &lt; X-Robots-Tag: noindex, nofollow
+1 &lt; X-Xss-Protection: 1; mode=block
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; CF-RAY: 9c54b0a1aa1fa4e2-MIA
+{&quot;error&quot;:&quot;Missing email or username&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.error == &#39;Missing email or username&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.2:30]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.2:30]</span>
+                <span class="scenario-name">Login user no success</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>409</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2.2:30]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2.2:30]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def keyApi = keyAccess</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.4">19:42:30.358 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.2:30]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header x-api-key = keyApi</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.2:30]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def bodyCredentials = read(&#39;classpath:request/credentialsUser.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>bodyCredentials.email = &#39;eve.holt@reqres.in&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>bodyCredentials.password = &#39;&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyCredentials</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">402</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.24">19:42:30.368 request:
+1 &gt; POST https://reqres.in/api/login
+1 &gt; x-api-key: reqres_8f192310fbe2489fa420a96aed225016
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 44
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.3.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;eve.holt@reqres.in&quot;,&quot;password&quot;:&quot;&quot;}
+
+19:42:30.767 response time in milliseconds: 398
+1 &lt; 400
+1 &lt; Date: Thu, 29 Jan 2026 00:42:30 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 28
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+1 &lt; Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 &lt; Access-Control-Allow-Origin: http://localhost:5173
+1 &lt; Etag: W/&quot;1c-NmpazMScs9tOqR7eDEesn+pqC9Q&quot;
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=ddFJDypUwfewGSx2pM0g33Jjq%2Br887grFcp8uBWxEWs%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1769647350&quot;}],&quot;max_age&quot;:3600}
+1 &lt; Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=ddFJDypUwfewGSx2pM0g33Jjq%2Br887grFcp8uBWxEWs%3D&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;ts=1769647350&quot;
+1 &lt; Server: cloudflare
+1 &lt; Vary: Origin
+1 &lt; Via: 1.1 heroku-router
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Powered-By: ReqRes.in - Deploy backends in 30 seconds
+1 &lt; X-Ratelimit-Limit: 100
+1 &lt; X-Ratelimit-Remaining: 50
+1 &lt; X-Ratelimit-Reset: 1769731200
+1 &lt; X-Reqres-Docs: https://reqres.in
+1 &lt; X-Reqres-Message: This API is powered by ReqRes. Deploy your own backend in 30 seconds!
+1 &lt; X-Reqres-Templates: https://app.reqres.in/templates
+1 &lt; X-Reqres-Upgrade: https://app.reqres.in/upgrade
+1 &lt; X-Request-Id: f6a04194-b4f3-cc72-8241-99ac873e099d
+1 &lt; X-Robots-Tag: noindex, nofollow
+1 &lt; X-Xss-Protection: 1; mode=block
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; CF-RAY: 9c54b0a45830c657-MIA
+{&quot;error&quot;:&quot;Missing password&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.error == &#39;Missing password&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
