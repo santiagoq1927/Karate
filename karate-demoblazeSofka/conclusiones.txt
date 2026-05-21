@@ -1,0 +1,58 @@
+***************************************************************
+ CONCLUSIONES Y HALLAZGOS - AUTOMATIZACION REST: DemoBlaze
+ Pruebas de servicios Signup y Login
+***************************************************************
+
+1. RESULTADOS POR CASO DE PRUEBA
+
+  Caso                       Feature    
+
+  Signup nuevo usuario       signup
+  Signup usuario existente   signup
+  Login correcto             login 
+  Login incorrecto           login 
+
+  Total escenarios: 6
+  Passed          : 6
+  Failed          : 0
+
+2. HALLAZGOS
+
+  * El API no sigue los estándar en códigos de respuesta
+
+  Todos los endpoints responden HTTP 200 independientemente
+  del resultado de la operación, ya sea éxito o error.
+
+  * Respuesta de signup exitoso es una cadena vacía
+
+  El API devuelve '""' (con un espacio o salto de línea
+  al final) como confirmación de signup exitoso. 
+
+  * Generación dinámica de usuarios en signup
+
+  Para garantizar que el test de "nuevo usuario" no falle
+  por usuario duplicado en ejecuciones repetidas, se
+  implemento generación dinámica del nombre de usuario.
+
+3. CONCLUSIONES
+
+  * Los cuatro casos del enunciado fueron implementados
+  y ejecutados exitosamente. Los servicios de signup y 
+  login de DemoBlaze responden de forma consistente y los 
+  escenarios definidos cubren los requerimietos del
+  ejercicio planteado.
+
+  * El API de DemoBlaze tiene deficiencias en su diseño.
+  El uso de HTTP 200 para todos los casos y la ausencia 
+  de respuestas estructuradas dificultan la escritura 
+  de pruebas robustas y obligan a depender completamente 
+  del contenido del body.
+
+  * Karate es una herramienta adecuada para este tipo de pruebas.
+  La combinación de sintaxis Gherkin con capacidades de manejo de
+  JSON, lectura de archivos externos permite cubrir múltiples 
+  casos de prueba con código limpio, legible y mantenible sin 
+  necesidad de librerías adicionales.
+***************************************************************
+
+

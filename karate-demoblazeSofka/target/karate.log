@@ -1,0 +1,2891 @@
+21:44:47.424 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:44:49.444 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+21:44:49.444 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+21:44:49.888 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.3.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:44:49.888 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 160
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.3.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+21:44:50.432 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 539
+1 < 201
+1 < Date: Fri, 27 Mar 2026 02:44:49 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 216
+1 < Connection: keep-alive
+1 < access-control-allow-credentials: true
+1 < access-control-expose-headers: Location
+1 < Cache-Control: no-cache
+1 < etag: W/"d8-pYV7+YuMGP2hxHPU9ARrf97ifDA"
+1 < expires: -1
+1 < location: https://jsonplaceholder.typicode.com/users/11
+1 < nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+1 < pragma: no-cache
+1 < report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=kJP98A29mJnYFlrAd%2F8yAiulJcltuAYNnEuEEhrddBM%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1774579489"}],"max_age":3600}
+1 < reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=kJP98A29mJnYFlrAd%2F8yAiulJcltuAYNnEuEEhrddBM%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1774579489"
+1 < Server: cloudflare
+1 < vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < via: 2.0 heroku-router
+1 < x-content-type-options: nosniff
+1 < x-powered-by: Express
+1 < x-ratelimit-limit: 1000
+1 < x-ratelimit-remaining: 999
+1 < x-ratelimit-reset: 1774579539
+1 < cf-cache-status: DYNAMIC
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=8,cfOrigin;dur=24
+1 < CF-RAY: 9e2b0e342c0fa53a-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{
+  "name": "Test User",
+  "username": "testuser",
+  "email": "test@user.com",
+  "address": {
+    "street": "Has No Name",
+    "suite": "Apt. 123",
+    "city": "Electri",
+    "zipcode": "54321-6789"
+  },
+  "id": 11
+}
+
+21:44:50.443 [pool-2-thread-2] INFO  com.intuit.karate - [print] created id is:  11 
+21:44:50.480 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 524
+1 < 200
+1 < Date: Fri, 27 Mar 2026 02:44:49 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Connection: keep-alive
+1 < access-control-allow-credentials: true
+1 < Cache-Control: max-age=43200
+1 < etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+1 < expires: -1
+1 < nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+1 < pragma: no-cache
+1 < report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=B%2FuQuBbpSjAYjlm%2F6L0%2Fq1k%2F9xvTexo8XnPe4S655Qk%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1761678399"}],"max_age":3600}
+1 < reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=B%2FuQuBbpSjAYjlm%2F6L0%2Fq1k%2F9xvTexo8XnPe4S655Qk%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1761678399"
+1 < Server: cloudflare
+1 < vary: Origin, Accept-Encoding
+1 < via: 2.0 heroku-router
+1 < x-content-type-options: nosniff
+1 < x-powered-by: Express
+1 < x-ratelimit-limit: 1000
+1 < x-ratelimit-remaining: 999
+1 < x-ratelimit-reset: 1761678430
+1 < Age: 434
+1 < Accept-Ranges: bytes
+1 < cf-cache-status: HIT
+1 < Server-Timing: cfCacheStatus;desc="HIT"
+1 < Server-Timing: cfEdge;dur=3,cfOrigin;dur=0
+1 < CF-RAY: 9e2b0e342e2a2ba1-MIA
+1 < alt-svc: h3=":443"; ma=86400
+[
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "address": {
+      "street": "Victor Plains",
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "zipcode": "90566-7771",
+      "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+      }
+    },
+    "phone": "010-692-6593 x09125",
+    "website": "anastasia.net",
+    "company": {
+      "name": "Deckow-Crist",
+      "catchPhrase": "Proactive didactic contingency",
+      "bs": "synergize scalable supply-chains"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+    "address": {
+      "street": "Douglas Extension",
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "zipcode": "59590-4157",
+      "geo": {
+        "lat": "-68.6102",
+        "lng": "-47.0653"
+      }
+    },
+    "phone": "1-463-123-4447",
+    "website": "ramiro.info",
+    "company": {
+      "name": "Romaguera-Jacobson",
+      "catchPhrase": "Face to face bifurcated interface",
+      "bs": "e-enable strategic applications"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    "address": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "493-170-9623 x156",
+    "website": "kale.biz",
+    "company": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "address": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
+      }
+    },
+    "phone": "(254)954-1289",
+    "website": "demarco.info",
+    "company": {
+      "name": "Keebler LLC",
+      "catchPhrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "address": {
+      "street": "Norberto Crossing",
+      "suite": "Apt. 950",
+      "city": "South Christy",
+      "zipcode": "23505-1337",
+      "geo": {
+        "lat": "-71.4197",
+        "lng": "71.7478"
+      }
+    },
+    "phone": "1-477-935-8478 x6430",
+    "website": "ola.org",
+    "company": {
+      "name": "Considine-Lockman",
+      "catchPhrase": "Synchronised bottom-line interface",
+      "bs": "e-enable innovative applications"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "address": {
+      "street": "Rex Trail",
+      "suite": "Suite 280",
+      "city": "Howemouth",
+      "zipcode": "58804-1099",
+      "geo": {
+        "lat": "24.8918",
+        "lng": "21.8984"
+      }
+    },
+    "phone": "210.067.6132",
+    "website": "elvis.io",
+    "company": {
+      "name": "Johns Group",
+      "catchPhrase": "Configurable multimedia task-force",
+      "bs": "generate enterprise e-tailers"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "address": {
+      "street": "Ellsworth Summit",
+      "suite": "Suite 729",
+      "city": "Aliyaview",
+      "zipcode": "45169",
+      "geo": {
+        "lat": "-14.3990",
+        "lng": "-120.7677"
+      }
+    },
+    "phone": "586.493.6943 x140",
+    "website": "jacynthe.com",
+    "company": {
+      "name": "Abernathy Group",
+      "catchPhrase": "Implemented secondary concept",
+      "bs": "e-enable extensible e-tailers"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "address": {
+      "street": "Dayna Park",
+      "suite": "Suite 449",
+      "city": "Bartholomebury",
+      "zipcode": "76495-3109",
+      "geo": {
+        "lat": "24.6463",
+        "lng": "-168.8889"
+      }
+    },
+    "phone": "(775)976-6794 x41206",
+    "website": "conrad.com",
+    "company": {
+      "name": "Yost and Sons",
+      "catchPhrase": "Switchable contextually-based project",
+      "bs": "aggregate real-time technologies"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "address": {
+      "street": "Kattie Turnpike",
+      "suite": "Suite 198",
+      "city": "Lebsackbury",
+      "zipcode": "31428-2261",
+      "geo": {
+        "lat": "-38.2386",
+        "lng": "57.2232"
+      }
+    },
+    "phone": "024-648-3804",
+    "website": "ambrose.net",
+    "company": {
+      "name": "Hoeger LLC",
+      "catchPhrase": "Centralized empowering task-force",
+      "bs": "target end-to-end models"
+    }
+  }
+]
+
+21:44:50.512 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+2 > GET https://jsonplaceholder.typicode.com/users/1
+2 > Host: jsonplaceholder.typicode.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.3.1)
+2 > Accept-Encoding: gzip,deflate
+
+
+21:44:50.754 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 240
+2 < 200
+2 < Date: Fri, 27 Mar 2026 02:44:50 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < access-control-allow-credentials: true
+2 < Cache-Control: max-age=43200
+2 < etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+2 < expires: -1
+2 < nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+2 < pragma: no-cache
+2 < report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=X0ifyGGY6teCcAcfy5e15SYjfVDu4tBDaPnOL%2FWj80g%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1774574347"}],"max_age":3600}
+2 < reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=X0ifyGGY6teCcAcfy5e15SYjfVDu4tBDaPnOL%2FWj80g%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1774574347"
+2 < Server: cloudflare
+2 < vary: Origin, Accept-Encoding
+2 < via: 2.0 heroku-router
+2 < x-content-type-options: nosniff
+2 < x-powered-by: Express
+2 < x-ratelimit-limit: 1000
+2 < x-ratelimit-remaining: 961
+2 < x-ratelimit-reset: 1774574378
+2 < Age: 5142
+2 < Server-Timing: cfCacheStatus;desc="HIT"
+2 < Server-Timing: cfEdge;dur=5,cfOrigin;dur=0
+2 < cf-cache-status: HIT
+2 < CF-RAY: 9e2b0e365cac5c6a-MIA
+2 < alt-svc: h3=":443"; ma=86400
+{
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}
+
+21:44:51.741 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:examples/users/users.feature
+21:56:59.796 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:57:01.534 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:57:01.614 [main] ERROR com.intuit.karate - classpath:demoblaze/signup/signup.feature:4
+* url https://api.demoblaze.com
+js failed:
+>>>>
+01: https://api.demoblaze.com
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:25 Expected ; but found eof
+https://api.demoblaze.com
+                         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2204)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2123)
+- com.intuit.karate.core.ScenarioEngine.url(ScenarioEngine.java:364)
+
+classpath:demoblaze/signup/signup.feature:4
+21:58:13.096 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:58:14.616 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:58:15.076 [main] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.3.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:58:15.799 [main] DEBUG com.intuit.karate - response time in milliseconds: 650
+1 < 200
+1 < Date: Fri, 27 Mar 2026 02:58:15 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Connection: keep-alive
+1 < access-control-allow-credentials: true
+1 < Cache-Control: max-age=43200
+1 < etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+1 < expires: -1
+1 < nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+1 < pragma: no-cache
+1 < report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=B%2FuQuBbpSjAYjlm%2F6L0%2Fq1k%2F9xvTexo8XnPe4S655Qk%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1761678399"}],"max_age":3600}
+1 < reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=B%2FuQuBbpSjAYjlm%2F6L0%2Fq1k%2F9xvTexo8XnPe4S655Qk%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1761678399"
+1 < Server: cloudflare
+1 < vary: Origin, Accept-Encoding
+1 < via: 2.0 heroku-router
+1 < x-content-type-options: nosniff
+1 < x-powered-by: Express
+1 < x-ratelimit-limit: 1000
+1 < x-ratelimit-remaining: 999
+1 < x-ratelimit-reset: 1761678430
+1 < Age: 1240
+1 < Accept-Ranges: bytes
+1 < cf-cache-status: HIT
+1 < Server-Timing: cfCacheStatus;desc="HIT"
+1 < Server-Timing: cfEdge;dur=4,cfOrigin;dur=0
+1 < CF-RAY: 9e2b21dd690655f7-MIA
+1 < alt-svc: h3=":443"; ma=86400
+[
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "address": {
+      "street": "Victor Plains",
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "zipcode": "90566-7771",
+      "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+      }
+    },
+    "phone": "010-692-6593 x09125",
+    "website": "anastasia.net",
+    "company": {
+      "name": "Deckow-Crist",
+      "catchPhrase": "Proactive didactic contingency",
+      "bs": "synergize scalable supply-chains"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+    "address": {
+      "street": "Douglas Extension",
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "zipcode": "59590-4157",
+      "geo": {
+        "lat": "-68.6102",
+        "lng": "-47.0653"
+      }
+    },
+    "phone": "1-463-123-4447",
+    "website": "ramiro.info",
+    "company": {
+      "name": "Romaguera-Jacobson",
+      "catchPhrase": "Face to face bifurcated interface",
+      "bs": "e-enable strategic applications"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    "address": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "493-170-9623 x156",
+    "website": "kale.biz",
+    "company": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "address": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
+      }
+    },
+    "phone": "(254)954-1289",
+    "website": "demarco.info",
+    "company": {
+      "name": "Keebler LLC",
+      "catchPhrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "address": {
+      "street": "Norberto Crossing",
+      "suite": "Apt. 950",
+      "city": "South Christy",
+      "zipcode": "23505-1337",
+      "geo": {
+        "lat": "-71.4197",
+        "lng": "71.7478"
+      }
+    },
+    "phone": "1-477-935-8478 x6430",
+    "website": "ola.org",
+    "company": {
+      "name": "Considine-Lockman",
+      "catchPhrase": "Synchronised bottom-line interface",
+      "bs": "e-enable innovative applications"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "address": {
+      "street": "Rex Trail",
+      "suite": "Suite 280",
+      "city": "Howemouth",
+      "zipcode": "58804-1099",
+      "geo": {
+        "lat": "24.8918",
+        "lng": "21.8984"
+      }
+    },
+    "phone": "210.067.6132",
+    "website": "elvis.io",
+    "company": {
+      "name": "Johns Group",
+      "catchPhrase": "Configurable multimedia task-force",
+      "bs": "generate enterprise e-tailers"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "address": {
+      "street": "Ellsworth Summit",
+      "suite": "Suite 729",
+      "city": "Aliyaview",
+      "zipcode": "45169",
+      "geo": {
+        "lat": "-14.3990",
+        "lng": "-120.7677"
+      }
+    },
+    "phone": "586.493.6943 x140",
+    "website": "jacynthe.com",
+    "company": {
+      "name": "Abernathy Group",
+      "catchPhrase": "Implemented secondary concept",
+      "bs": "e-enable extensible e-tailers"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "address": {
+      "street": "Dayna Park",
+      "suite": "Suite 449",
+      "city": "Bartholomebury",
+      "zipcode": "76495-3109",
+      "geo": {
+        "lat": "24.6463",
+        "lng": "-168.8889"
+      }
+    },
+    "phone": "(775)976-6794 x41206",
+    "website": "conrad.com",
+    "company": {
+      "name": "Yost and Sons",
+      "catchPhrase": "Switchable contextually-based project",
+      "bs": "aggregate real-time technologies"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "address": {
+      "street": "Kattie Turnpike",
+      "suite": "Suite 198",
+      "city": "Lebsackbury",
+      "zipcode": "31428-2261",
+      "geo": {
+        "lat": "-38.2386",
+        "lng": "57.2232"
+      }
+    },
+    "phone": "024-648-3804",
+    "website": "ambrose.net",
+    "company": {
+      "name": "Hoeger LLC",
+      "catchPhrase": "Centralized empowering task-force",
+      "bs": "target end-to-end models"
+    }
+  }
+]
+
+21:58:15.890 [main] DEBUG com.intuit.karate - request:
+2 > GET https://jsonplaceholder.typicode.com/users/1
+2 > Host: jsonplaceholder.typicode.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.3.1)
+2 > Accept-Encoding: gzip,deflate
+
+
+21:58:16.118 [main] DEBUG com.intuit.karate - response time in milliseconds: 227
+2 < 200
+2 < Date: Fri, 27 Mar 2026 02:58:15 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < access-control-allow-credentials: true
+2 < Cache-Control: max-age=43200
+2 < etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+2 < expires: -1
+2 < nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+2 < pragma: no-cache
+2 < report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=X0ifyGGY6teCcAcfy5e15SYjfVDu4tBDaPnOL%2FWj80g%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1774574347"}],"max_age":3600}
+2 < reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=X0ifyGGY6teCcAcfy5e15SYjfVDu4tBDaPnOL%2FWj80g%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1774574347"
+2 < Server: cloudflare
+2 < vary: Origin, Accept-Encoding
+2 < via: 2.0 heroku-router
+2 < x-content-type-options: nosniff
+2 < x-powered-by: Express
+2 < x-ratelimit-limit: 1000
+2 < x-ratelimit-remaining: 961
+2 < x-ratelimit-reset: 1774574378
+2 < Age: 5948
+2 < Server-Timing: cfCacheStatus;desc="HIT"
+2 < Server-Timing: cfEdge;dur=5,cfOrigin;dur=0
+2 < cf-cache-status: HIT
+2 < CF-RAY: 9e2b21dfec0736f2-MIA
+2 < alt-svc: h3=":443"; ma=86400
+{
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}
+
+21:58:16.147 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:58:16.259 [main] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 160
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.3.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+21:58:16.554 [main] DEBUG com.intuit.karate - response time in milliseconds: 293
+1 < 201
+1 < Date: Fri, 27 Mar 2026 02:58:16 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 216
+1 < Connection: keep-alive
+1 < access-control-allow-credentials: true
+1 < access-control-expose-headers: Location
+1 < Cache-Control: no-cache
+1 < etag: W/"d8-pYV7+YuMGP2hxHPU9ARrf97ifDA"
+1 < expires: -1
+1 < location: https://jsonplaceholder.typicode.com/users/11
+1 < nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+1 < pragma: no-cache
+1 < report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=yA%2BM8muNBkdYIC23SNePQ5VZ5yl7EN0eXARcR5Eps0E%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1774580296"}],"max_age":3600}
+1 < reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=yA%2BM8muNBkdYIC23SNePQ5VZ5yl7EN0eXARcR5Eps0E%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1774580296"
+1 < Server: cloudflare
+1 < vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < via: 2.0 heroku-router
+1 < x-content-type-options: nosniff
+1 < x-powered-by: Express
+1 < x-ratelimit-limit: 1000
+1 < x-ratelimit-remaining: 999
+1 < x-ratelimit-reset: 1774580319
+1 < cf-cache-status: DYNAMIC
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=3,cfOrigin;dur=72
+1 < CF-RAY: 9e2b21e23cd055ff-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{
+  "name": "Test User",
+  "username": "testuser",
+  "email": "test@user.com",
+  "address": {
+    "street": "Has No Name",
+    "suite": "Apt. 123",
+    "city": "Electri",
+    "zipcode": "54321-6789"
+  },
+  "id": 11
+}
+
+21:58:16.562 [main] INFO  com.intuit.karate - [print] created id is:  11 
+22:00:32.986 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:00:34.597 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:00:34.698 [main] ERROR com.intuit.karate - classpath:examples/signup/signup.feature:4
+* url https://api.demoblaze.com
+js failed:
+>>>>
+01: https://api.demoblaze.com
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:25 Expected ; but found eof
+https://api.demoblaze.com
+                         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2204)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2123)
+- com.intuit.karate.core.ScenarioEngine.url(ScenarioEngine.java:364)
+
+classpath:examples/signup/signup.feature:4
+22:01:49.917 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:01:51.460 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:01:51.944 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 52
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.3.1)
+1 > Accept-Encoding: gzip,deflate
+{"username":"test_user_001","password":"123456Test"}
+
+22:01:52.693 [main] DEBUG com.intuit.karate - response time in milliseconds: 744
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: e42e181429a5182cef1d65a08d106093;o=1
+1 < date: Fri, 27 Mar 2026 03:01:52 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+22:01:52.723 [main] ERROR com.intuit.karate - classpath:examples/signup/signup.feature:11
+And match response == ""
+match failed: EQUALS
+  $ | data types don't match (MAP:STRING)
+  {"errorMessage":"This user already exist."}
+  ''
+
+classpath:examples/signup/signup.feature:11
+22:02:47.083 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:02:48.587 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:02:49.047 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 46
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.3.1)
+1 > Accept-Encoding: gzip,deflate
+{"username":"test_01","password":"123456Test"}
+
+22:02:49.463 [main] DEBUG com.intuit.karate - response time in milliseconds: 413
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: adc57b00f60df752c3a435b01b2fa67b;o=1
+1 < date: Fri, 27 Mar 2026 03:02:49 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+22:02:49.500 [main] ERROR com.intuit.karate - classpath:examples/signup/signup.feature:11
+And match response == ""
+match failed: EQUALS
+  $ | data types don't match (MAP:STRING)
+  {"errorMessage":"This user already exist."}
+  ''
+
+classpath:examples/signup/signup.feature:11
+22:05:27.460 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:05:29.016 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:05:29.485 [main] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:05:30.242 [main] DEBUG com.intuit.karate - response time in milliseconds: 686
+1 < 200
+1 < Date: Fri, 27 Mar 2026 03:05:29 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Connection: keep-alive
+1 < access-control-allow-credentials: true
+1 < Cache-Control: max-age=43200
+1 < etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+1 < expires: -1
+1 < nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+1 < pragma: no-cache
+1 < report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=B%2FuQuBbpSjAYjlm%2F6L0%2Fq1k%2F9xvTexo8XnPe4S655Qk%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1761678399"}],"max_age":3600}
+1 < reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=B%2FuQuBbpSjAYjlm%2F6L0%2Fq1k%2F9xvTexo8XnPe4S655Qk%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1761678399"
+1 < Server: cloudflare
+1 < vary: Origin, Accept-Encoding
+1 < via: 2.0 heroku-router
+1 < x-content-type-options: nosniff
+1 < x-powered-by: Express
+1 < x-ratelimit-limit: 1000
+1 < x-ratelimit-remaining: 999
+1 < x-ratelimit-reset: 1761678430
+1 < Age: 1674
+1 < Accept-Ranges: bytes
+1 < cf-cache-status: HIT
+1 < Server-Timing: cfCacheStatus;desc="HIT"
+1 < Server-Timing: cfEdge;dur=5,cfOrigin;dur=0
+1 < CF-RAY: 9e2b2c78b9b7259a-MIA
+1 < alt-svc: h3=":443"; ma=86400
+[
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "address": {
+      "street": "Victor Plains",
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "zipcode": "90566-7771",
+      "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+      }
+    },
+    "phone": "010-692-6593 x09125",
+    "website": "anastasia.net",
+    "company": {
+      "name": "Deckow-Crist",
+      "catchPhrase": "Proactive didactic contingency",
+      "bs": "synergize scalable supply-chains"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+    "address": {
+      "street": "Douglas Extension",
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "zipcode": "59590-4157",
+      "geo": {
+        "lat": "-68.6102",
+        "lng": "-47.0653"
+      }
+    },
+    "phone": "1-463-123-4447",
+    "website": "ramiro.info",
+    "company": {
+      "name": "Romaguera-Jacobson",
+      "catchPhrase": "Face to face bifurcated interface",
+      "bs": "e-enable strategic applications"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    "address": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "493-170-9623 x156",
+    "website": "kale.biz",
+    "company": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "address": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
+      }
+    },
+    "phone": "(254)954-1289",
+    "website": "demarco.info",
+    "company": {
+      "name": "Keebler LLC",
+      "catchPhrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "address": {
+      "street": "Norberto Crossing",
+      "suite": "Apt. 950",
+      "city": "South Christy",
+      "zipcode": "23505-1337",
+      "geo": {
+        "lat": "-71.4197",
+        "lng": "71.7478"
+      }
+    },
+    "phone": "1-477-935-8478 x6430",
+    "website": "ola.org",
+    "company": {
+      "name": "Considine-Lockman",
+      "catchPhrase": "Synchronised bottom-line interface",
+      "bs": "e-enable innovative applications"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "address": {
+      "street": "Rex Trail",
+      "suite": "Suite 280",
+      "city": "Howemouth",
+      "zipcode": "58804-1099",
+      "geo": {
+        "lat": "24.8918",
+        "lng": "21.8984"
+      }
+    },
+    "phone": "210.067.6132",
+    "website": "elvis.io",
+    "company": {
+      "name": "Johns Group",
+      "catchPhrase": "Configurable multimedia task-force",
+      "bs": "generate enterprise e-tailers"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "address": {
+      "street": "Ellsworth Summit",
+      "suite": "Suite 729",
+      "city": "Aliyaview",
+      "zipcode": "45169",
+      "geo": {
+        "lat": "-14.3990",
+        "lng": "-120.7677"
+      }
+    },
+    "phone": "586.493.6943 x140",
+    "website": "jacynthe.com",
+    "company": {
+      "name": "Abernathy Group",
+      "catchPhrase": "Implemented secondary concept",
+      "bs": "e-enable extensible e-tailers"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "address": {
+      "street": "Dayna Park",
+      "suite": "Suite 449",
+      "city": "Bartholomebury",
+      "zipcode": "76495-3109",
+      "geo": {
+        "lat": "24.6463",
+        "lng": "-168.8889"
+      }
+    },
+    "phone": "(775)976-6794 x41206",
+    "website": "conrad.com",
+    "company": {
+      "name": "Yost and Sons",
+      "catchPhrase": "Switchable contextually-based project",
+      "bs": "aggregate real-time technologies"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "address": {
+      "street": "Kattie Turnpike",
+      "suite": "Suite 198",
+      "city": "Lebsackbury",
+      "zipcode": "31428-2261",
+      "geo": {
+        "lat": "-38.2386",
+        "lng": "57.2232"
+      }
+    },
+    "phone": "024-648-3804",
+    "website": "ambrose.net",
+    "company": {
+      "name": "Hoeger LLC",
+      "catchPhrase": "Centralized empowering task-force",
+      "bs": "target end-to-end models"
+    }
+  }
+]
+
+22:05:30.336 [main] DEBUG com.intuit.karate - request:
+2 > GET https://jsonplaceholder.typicode.com/users/1
+2 > Host: jsonplaceholder.typicode.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+2 > Accept-Encoding: gzip,deflate
+
+
+22:05:30.580 [main] DEBUG com.intuit.karate - response time in milliseconds: 243
+2 < 200
+2 < Date: Fri, 27 Mar 2026 03:05:30 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < access-control-allow-credentials: true
+2 < Cache-Control: max-age=43200
+2 < etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+2 < expires: -1
+2 < nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+2 < pragma: no-cache
+2 < report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=X0ifyGGY6teCcAcfy5e15SYjfVDu4tBDaPnOL%2FWj80g%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1774574347"}],"max_age":3600}
+2 < reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=X0ifyGGY6teCcAcfy5e15SYjfVDu4tBDaPnOL%2FWj80g%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1774574347"
+2 < Server: cloudflare
+2 < vary: Origin, Accept-Encoding
+2 < via: 2.0 heroku-router
+2 < x-content-type-options: nosniff
+2 < x-powered-by: Express
+2 < x-ratelimit-limit: 1000
+2 < x-ratelimit-remaining: 961
+2 < x-ratelimit-reset: 1774574378
+2 < Age: 6382
+2 < Server-Timing: cfCacheStatus;desc="HIT"
+2 < Server-Timing: cfEdge;dur=9,cfOrigin;dur=0
+2 < cf-cache-status: HIT
+2 < CF-RAY: 9e2b2c7b4cf2a4c4-MIA
+2 < alt-svc: h3=":443"; ma=86400
+{
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}
+
+22:05:30.639 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:05:30.752 [main] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 160
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+22:05:31.020 [main] DEBUG com.intuit.karate - response time in milliseconds: 267
+1 < 201
+1 < Date: Fri, 27 Mar 2026 03:05:30 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 216
+1 < Connection: keep-alive
+1 < access-control-allow-credentials: true
+1 < access-control-expose-headers: Location
+1 < Cache-Control: no-cache
+1 < etag: W/"d8-pYV7+YuMGP2hxHPU9ARrf97ifDA"
+1 < expires: -1
+1 < location: https://jsonplaceholder.typicode.com/users/11
+1 < nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+1 < pragma: no-cache
+1 < report-to: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=yEAsIz1UQ6A9XJRvLUb7Nzsby6cxfYM9UjPEKM6%2F3sk%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1774580730"}],"max_age":3600}
+1 < reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=yEAsIz1UQ6A9XJRvLUb7Nzsby6cxfYM9UjPEKM6%2F3sk%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1774580730"
+1 < Server: cloudflare
+1 < vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < via: 2.0 heroku-router
+1 < x-content-type-options: nosniff
+1 < x-powered-by: Express
+1 < x-ratelimit-limit: 1000
+1 < x-ratelimit-remaining: 999
+1 < x-ratelimit-reset: 1774580739
+1 < cf-cache-status: DYNAMIC
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=4,cfOrigin;dur=27
+1 < CF-RAY: 9e2b2c7dc9617419-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{
+  "name": "Test User",
+  "username": "testuser",
+  "email": "test@user.com",
+  "address": {
+    "street": "Has No Name",
+    "suite": "Apt. 123",
+    "city": "Electri",
+    "zipcode": "54321-6789"
+  },
+  "id": 11
+}
+
+22:05:31.029 [main] INFO  com.intuit.karate - [print] created id is:  11 
+22:05:44.473 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:05:45.992 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:05:46.476 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 46
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"test_01","password":"123456Test"}
+
+22:05:47.054 [main] DEBUG com.intuit.karate - response time in milliseconds: 575
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: b9f9f543591e357b4ad3e6629721f2e9;o=1
+1 < date: Fri, 27 Mar 2026 03:05:46 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+22:05:47.082 [main] ERROR com.intuit.karate - classpath:examples/signup/signup.feature:11
+And match response == ""
+match failed: EQUALS
+  $ | data types don't match (MAP:STRING)
+  {"errorMessage":"This user already exist."}
+  ''
+
+classpath:examples/signup/signup.feature:11
+22:06:29.207 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:06:30.773 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:06:31.297 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 51
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_011","password":"123456Test"}
+
+22:06:31.984 [main] DEBUG com.intuit.karate - response time in milliseconds: 684
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: b8ec4a1a8f542bbf16f12abfa70a85fe
+1 < date: Fri, 27 Mar 2026 03:06:31 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+22:06:32.018 [main] ERROR com.intuit.karate - classpath:examples/signup/signup.feature:11
+And match response == ""
+match failed: EQUALS
+  $ | data types don't match (MAP:STRING)
+  {"errorMessage":"This user already exist."}
+  ''
+
+classpath:examples/signup/signup.feature:11
+22:08:31.868 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:08:33.426 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:08:33.873 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 44
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"carlosord","password":"123789"}
+
+22:08:34.446 [main] DEBUG com.intuit.karate - response time in milliseconds: 569
+1 < 200
+1 < content-type: application/json
+1 < x-cloud-trace-context: 71dd56360b10d1a1acfd5142d7c47313;o=1
+1 < date: Fri, 27 Mar 2026 03:08:33 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3
+""
+
+
+22:08:34.475 [main] ERROR com.intuit.karate - classpath:examples/signup/signup.feature:11
+And match response == ""
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  '""
+'
+  ''
+
+classpath:examples/signup/signup.feature:11
+22:08:34.517 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:08:34.522 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 51
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_011","password":"123456Test"}
+
+22:08:34.787 [main] DEBUG com.intuit.karate - response time in milliseconds: 264
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: b8b7e6b203daf2904751d2e5a812354c
+1 < date: Fri, 27 Mar 2026 03:08:34 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+22:08:34.847 [main] ERROR com.intuit.karate - classpath:examples/signup/signup.feature:18
+And match response.path == "errorMessage":"This user already exist."
+js failed:
+>>>>
+01: "errorMessage":"This user already exist."
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:14 Expected ; but found :
+"errorMessage":"This user already exist."
+              ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2204)
+- com.intuit.karate.core.ScenarioEngine.match(ScenarioEngine.java:1807)
+- com.intuit.karate.core.ScenarioEngine.matchResult(ScenarioEngine.java:167)
+
+classpath:examples/signup/signup.feature:18
+22:09:44.325 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:09:45.813 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:09:46.301 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 42
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"betoord","password":"123789"}
+
+22:09:46.855 [main] DEBUG com.intuit.karate - response time in milliseconds: 550
+1 < 200
+1 < content-type: application/json
+1 < x-cloud-trace-context: a64ae92fc3f1ca095a8f56ff687768d2;o=1
+1 < date: Fri, 27 Mar 2026 03:09:46 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3
+""
+
+
+22:09:46.865 [main] INFO  com.intuit.karate - [print] ""
+ 
+22:09:46.882 [main] ERROR com.intuit.karate - classpath:examples/signup/signup.feature:12
+And match response == ""
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  '""
+'
+  ''
+
+classpath:examples/signup/signup.feature:12
+22:09:46.929 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:09:46.934 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 51
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_011","password":"123456Test"}
+
+22:09:47.199 [main] DEBUG com.intuit.karate - response time in milliseconds: 263
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: cf16bba5b455ae681019ed362925865c
+1 < date: Fri, 27 Mar 2026 03:09:46 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+22:09:47.214 [main] ERROR com.intuit.karate - classpath:examples/signup/signup.feature:19
+And match response.path == "errorMessage: This user already exist."
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'errorMessage: This user already exist.'
+
+classpath:examples/signup/signup.feature:19
+22:15:04.913 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:15:06.449 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:15:06.923 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 42
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"betoord","password":"123789"}
+
+22:15:07.766 [main] DEBUG com.intuit.karate - response time in milliseconds: 839
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: 02c050e71a2c4dbff0c8ddf0e0d87942;o=1
+1 < date: Fri, 27 Mar 2026 03:15:07 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+22:15:07.783 [main] INFO  com.intuit.karate - [print] {
+  "errorMessage": "This user already exist."
+}
+ 
+22:15:07.807 [main] ERROR com.intuit.karate - classpath:examples/signup/signup.feature:12
+And match response == ''
+match failed: EQUALS
+  $ | data types don't match (MAP:STRING)
+  {"errorMessage":"This user already exist."}
+  ''
+
+classpath:examples/signup/signup.feature:12
+22:15:07.849 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:15:07.869 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 51
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_011","password":"123456Test"}
+
+22:15:08.187 [main] DEBUG com.intuit.karate - response time in milliseconds: 316
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: 23218314a8f659718c157f9c52e94f7d
+1 < date: Fri, 27 Mar 2026 03:15:07 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+22:15:38.436 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:15:39.910 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:15:40.458 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 45
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"betobenord","password":"123789"}
+
+22:15:41.031 [main] DEBUG com.intuit.karate - response time in milliseconds: 569
+1 < 200
+1 < content-type: application/json
+1 < x-cloud-trace-context: 6d3d5c56c8eabe78f3a666ce4d60b0ad;o=1
+1 < date: Fri, 27 Mar 2026 03:15:40 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3
+""
+
+
+22:15:41.042 [main] INFO  com.intuit.karate - [print] ""
+ 
+22:15:41.065 [main] ERROR com.intuit.karate - classpath:examples/signup/signup.feature:12
+And match response == ''
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  '""
+'
+  ''
+
+classpath:examples/signup/signup.feature:12
+22:15:41.113 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:15:41.138 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 51
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_011","password":"123456Test"}
+
+22:15:41.398 [main] DEBUG com.intuit.karate - response time in milliseconds: 258
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: 4e1f33411a70aa0afe9c178450c85432
+1 < date: Fri, 27 Mar 2026 03:15:40 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+22:16:07.912 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:16:09.501 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:16:10.018 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 45
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"calicheord","password":"123789"}
+
+22:16:10.636 [main] DEBUG com.intuit.karate - response time in milliseconds: 614
+1 < 200
+1 < content-type: application/json
+1 < x-cloud-trace-context: 8bae7add398ad4205ef8ede60a6c4525
+1 < date: Fri, 27 Mar 2026 03:16:10 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3
+""
+
+
+22:16:10.655 [main] INFO  com.intuit.karate - [print] ""
+ 
+22:16:10.671 [main] ERROR com.intuit.karate - classpath:examples/signup/signup.feature:12
+And match response == '""'
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  '""
+'
+  '""'
+
+classpath:examples/signup/signup.feature:12
+22:16:10.720 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:16:10.746 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 51
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_011","password":"123456Test"}
+
+22:16:10.992 [main] DEBUG com.intuit.karate - response time in milliseconds: 244
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: 5dc9a9731893b8897e9caa61cb645206
+1 < date: Fri, 27 Mar 2026 03:16:10 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+22:18:07.835 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:18:09.301 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:18:09.826 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 44
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"manoloord","password":"123789"}
+
+22:18:10.379 [main] DEBUG com.intuit.karate - response time in milliseconds: 549
+1 < 200
+1 < content-type: application/json
+1 < x-cloud-trace-context: 2073bbc1324e674d27c9aefa394ef3e3
+1 < date: Fri, 27 Mar 2026 03:18:09 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3
+""
+
+
+22:18:10.399 [main] INFO  com.intuit.karate - [print] ""
+ 
+22:18:10.460 [main] ERROR com.intuit.karate - classpath:examples/signup/signup.feature:12
+And match response == contains '""'
+js failed:
+>>>>
+01: contains '""'
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:10 Expected ; but found ""
+contains '""'
+          ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2204)
+- com.intuit.karate.core.ScenarioEngine.match(ScenarioEngine.java:1807)
+- com.intuit.karate.core.ScenarioEngine.matchResult(ScenarioEngine.java:167)
+
+classpath:examples/signup/signup.feature:12
+22:18:10.494 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:18:10.517 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 51
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_011","password":"123456Test"}
+
+22:18:10.888 [main] DEBUG com.intuit.karate - response time in milliseconds: 370
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: 93b4e094769e1c9ec64b8fd462a8b0b4
+1 < date: Fri, 27 Mar 2026 03:18:10 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+22:19:41.833 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:19:43.522 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:19:44.107 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 44
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"manoloord","password":"123789"}
+
+22:19:44.666 [main] DEBUG com.intuit.karate - response time in milliseconds: 555
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: d1b2bbdf385e4d9b5514b74ef3fdb77b
+1 < date: Fri, 27 Mar 2026 03:19:44 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+22:19:44.682 [main] INFO  com.intuit.karate - [print] {
+  "errorMessage": "This user already exist."
+}
+ 
+22:19:44.707 [main] ERROR com.intuit.karate - classpath:examples/signup/signup.feature:12
+And match response contains '""'
+match failed: CONTAINS
+  $ | data types don't match (MAP:STRING)
+  {"errorMessage":"This user already exist."}
+  '""'
+
+
+classpath:examples/signup/signup.feature:12
+22:19:44.749 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:19:44.764 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 51
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_011","password":"123456Test"}
+
+22:19:44.985 [main] DEBUG com.intuit.karate - response time in milliseconds: 217
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: d07e9181645d279e2d04c9159a374259
+1 < date: Fri, 27 Mar 2026 03:19:44 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+22:19:59.905 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:20:01.403 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:20:01.899 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 44
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"javierqui","password":"123789"}
+
+22:20:02.834 [main] DEBUG com.intuit.karate - response time in milliseconds: 930
+1 < 200
+1 < content-type: application/json
+1 < x-cloud-trace-context: bf9117dbbee5b4e2ac523cc034ec7cae;o=1
+1 < date: Fri, 27 Mar 2026 03:20:02 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3
+""
+
+
+22:20:02.843 [main] INFO  com.intuit.karate - [print] ""
+ 
+22:20:02.882 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:20:02.914 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 51
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testuser_011","password":"123456Test"}
+
+22:20:03.177 [main] DEBUG com.intuit.karate - response time in milliseconds: 263
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: 0e7c1c4b6cfc097b094037126dc543ba
+1 < date: Fri, 27 Mar 2026 03:20:02 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+22:20:33.677 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:20:35.152 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:20:35.605 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 39
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"test","password":"123789"}
+
+22:20:36.132 [main] DEBUG com.intuit.karate - response time in milliseconds: 522
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: 61d66773f101442347a74f625affed21
+1 < date: Fri, 27 Mar 2026 03:20:35 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+22:20:36.146 [main] INFO  com.intuit.karate - [print] {
+  "errorMessage": "This user already exist."
+}
+ 
+22:20:36.181 [main] ERROR com.intuit.karate - classpath:examples/signup/signup.feature:12
+And match response contains '""'
+match failed: CONTAINS
+  $ | data types don't match (MAP:STRING)
+  {"errorMessage":"This user already exist."}
+  '""'
+
+
+classpath:examples/signup/signup.feature:12
+22:20:36.241 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:20:36.258 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 43
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"test","password":"123456Test"}
+
+22:20:36.513 [main] DEBUG com.intuit.karate - response time in milliseconds: 254
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: 66f8ad103a7730fa406bf3c301067d12
+1 < date: Fri, 27 Mar 2026 03:20:36 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+22:26:17.653 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:26:19.427 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:26:19.833 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 43
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"guzman10","password":"123456"}
+
+22:26:20.644 [main] DEBUG com.intuit.karate - response time in milliseconds: 806
+1 < 200
+1 < content-type: application/json
+1 < x-cloud-trace-context: 1709c2db898d12289991444f9ff1a266;o=1
+1 < date: Fri, 27 Mar 2026 03:26:20 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3
+""
+
+
+22:26:20.665 [main] INFO  com.intuit.karate - [print] ""
+ 
+22:26:20.705 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:26:20.761 [main] ERROR com.intuit.karate - classpath:examples/signup/signup.feature:17
+* bodyUser.username = user
+js failed:
+>>>>
+01: bodyUser.username = user
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "user" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:examples/signup/signup.feature:17
+22:26:20.783 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:26:20.791 [main] ERROR com.intuit.karate - classpath:examples/signup/signup.feature:17
+* bodyUser.username = test
+js failed:
+>>>>
+01: bodyUser.username = test
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "test" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:examples/signup/signup.feature:17
+22:27:09.373 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:27:10.937 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:27:11.367 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 46
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"guzmancho10","password":"123456"}
+
+22:27:11.985 [main] DEBUG com.intuit.karate - response time in milliseconds: 614
+1 < 200
+1 < content-type: application/json
+1 < x-cloud-trace-context: 66443c513710e5ef3d667767e10aef09
+1 < date: Fri, 27 Mar 2026 03:27:11 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3
+""
+
+
+22:27:12.004 [main] INFO  com.intuit.karate - [print] ""
+ 
+22:27:12.045 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:27:12.085 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 41
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"user","password":"password"}
+
+22:27:12.370 [main] DEBUG com.intuit.karate - response time in milliseconds: 283
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: 9ef9e08d78eb73605af5b7358a1b0435
+1 < date: Fri, 27 Mar 2026 03:27:11 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+22:27:12.400 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:27:12.415 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 39
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"test","password":"123456"}
+
+22:27:12.656 [main] DEBUG com.intuit.karate - response time in milliseconds: 240
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: 57417a9922ce63f4069dac71c3e4e92a
+1 < date: Fri, 27 Mar 2026 03:27:12 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+22:35:56.884 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:35:58.467 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:35:59.029 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 53
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"user_1774582558613","password":"123456"}
+
+22:35:59.805 [main] DEBUG com.intuit.karate - response time in milliseconds: 773
+1 < 200
+1 < content-type: application/json
+1 < x-cloud-trace-context: 2387bbafe56ede340afe1f94b7e048b4
+1 < date: Fri, 27 Mar 2026 03:35:59 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3
+""
+
+
+22:35:59.814 [main] INFO  com.intuit.karate - [print] ""
+ 
+22:35:59.856 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:35:59.873 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 41
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"user","password":"password"}
+
+22:36:00.122 [main] DEBUG com.intuit.karate - response time in milliseconds: 248
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: 1f18a9726084c26d930a6f5f9a42ab75
+1 < date: Fri, 27 Mar 2026 03:35:59 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+22:36:00.146 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:36:00.159 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 39
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"test","password":"123456"}
+
+22:36:00.461 [main] DEBUG com.intuit.karate - response time in milliseconds: 301
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: b25625abd8070b1fb07cea0c8f4e36c5
+1 < date: Fri, 27 Mar 2026 03:36:00 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+22:42:06.581 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:42:08.162 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:42:08.624 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 45
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"adriandiaz","password":"123456"}
+
+22:42:09.502 [main] DEBUG com.intuit.karate - response time in milliseconds: 873
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: d5faf98be6343cfe7ecfa2c069af0030;o=1
+1 < date: Fri, 27 Mar 2026 03:42:09 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+"Auth_token: YWRyaWFuZGlhejE3NzUxODI="
+
+
+22:42:09.515 [main] INFO  com.intuit.karate - [print] "Auth_token: YWRyaWFuZGlhejE3NzUxODI="
+ 
+22:42:09.549 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:42:09.592 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 50
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"userTest","password":"passwordWrong"}
+
+22:42:09.830 [main] DEBUG com.intuit.karate - response time in milliseconds: 236
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: cf20ccd8d36be3f302cc36b697f19e99
+1 < date: Fri, 27 Mar 2026 03:42:09 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"Wrong password."}
+
+
+22:42:09.843 [main] ERROR com.intuit.karate - classpath:examples/login/login.feature:23
+And match response == responseUser
+match failed: EQUALS
+  $ | not equal | match failed for name: 'errorMessage' (MAP:MAP)
+  {"errorMessage":"Wrong password."}
+  {"errorMessage":"This user already exist."}
+
+    $.errorMessage | not equal (STRING:STRING)
+    'Wrong password.'
+    'This user already exist.'
+
+classpath:examples/login/login.feature:23
+22:42:09.895 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:42:09.906 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 50
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testUser","password":"wrongPassword"}
+
+22:42:10.145 [main] DEBUG com.intuit.karate - response time in milliseconds: 237
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: 47a8994a2349832cf3a0e691619b5e61
+1 < date: Fri, 27 Mar 2026 03:42:09 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"Wrong password."}
+
+
+22:42:10.149 [main] ERROR com.intuit.karate - classpath:examples/login/login.feature:23
+And match response == responseUser
+match failed: EQUALS
+  $ | not equal | match failed for name: 'errorMessage' (MAP:MAP)
+  {"errorMessage":"Wrong password."}
+  {"errorMessage":"This user already exist."}
+
+    $.errorMessage | not equal (STRING:STRING)
+    'Wrong password.'
+    'This user already exist.'
+
+classpath:examples/login/login.feature:23
+22:42:58.663 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:43:00.149 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:43:00.636 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 45
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"adriandiaz","password":"123456"}
+
+22:43:01.202 [main] DEBUG com.intuit.karate - response time in milliseconds: 561
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: 54dd8984b6f55c78bd0b7515c75b7a45
+1 < date: Fri, 27 Mar 2026 03:43:00 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+"Auth_token: YWRyaWFuZGlhejE3NzUxODI="
+
+
+22:43:01.216 [main] INFO  com.intuit.karate - [print] "Auth_token: YWRyaWFuZGlhejE3NzUxODI="
+ 
+22:43:01.256 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:43:01.290 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 50
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"userTest","password":"passwordWrong"}
+
+22:43:01.600 [main] DEBUG com.intuit.karate - response time in milliseconds: 308
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: b73441868d5a4c159a2496fe7108b742
+1 < date: Fri, 27 Mar 2026 03:43:01 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"Wrong password."}
+
+
+22:43:01.619 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:43:01.632 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 50
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testUser","password":"wrongPassword"}
+
+22:43:01.963 [main] DEBUG com.intuit.karate - response time in milliseconds: 330
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: a3117705165948f7198b98173e6d5893
+1 < date: Fri, 27 Mar 2026 03:43:01 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"Wrong password."}
+
+
+22:44:21.251 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:44:22.726 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:44:23.256 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 45
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"adriandiaz","password":"123456"}
+
+22:44:23.957 [main] DEBUG com.intuit.karate - response time in milliseconds: 698
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: e8f8bbfcd76e6d0efe0e16107cbb4a55
+1 < date: Fri, 27 Mar 2026 03:44:23 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+"Auth_token: YWRyaWFuZGlhejE3NzUxODM="
+
+
+22:44:23.965 [main] INFO  com.intuit.karate - [print] "Auth_token: YWRyaWFuZGlhejE3NzUxODM="
+ 
+22:44:24.014 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:44:24.039 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 50
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"userTest","password":"passwordWrong"}
+
+22:44:24.583 [main] DEBUG com.intuit.karate - response time in milliseconds: 543
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: 03b4f6fbd28045235caa7eef48a645c6
+1 < date: Fri, 27 Mar 2026 03:44:24 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"Wrong password."}
+
+
+22:44:24.602 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:44:24.613 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 50
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testUser","password":"wrongPassword"}
+
+22:44:24.913 [main] DEBUG com.intuit.karate - response time in milliseconds: 299
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: 495c8e7895b90e04c2207232c59e82da
+1 < date: Fri, 27 Mar 2026 03:44:24 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"Wrong password."}
+
+
+22:46:17.079 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:46:18.537 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:46:19.076 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 45
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"adriandiaz","password":"123456"}
+
+22:46:19.622 [main] DEBUG com.intuit.karate - response time in milliseconds: 542
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: ea6dc3925f69aae258a3e1484effb242
+1 < date: Fri, 27 Mar 2026 03:46:19 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+"Auth_token: YWRyaWFuZGlhejE3NzUxODM="
+
+
+22:46:19.633 [main] INFO  com.intuit.karate - [print] "Auth_token: YWRyaWFuZGlhejE3NzUxODM="
+ 
+22:46:19.681 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:46:19.702 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 50
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"userTest","password":"passwordWrong"}
+
+22:46:19.930 [main] DEBUG com.intuit.karate - response time in milliseconds: 228
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: 6c1c2446b466ccb29cf35bcee9e9aefb
+1 < date: Fri, 27 Mar 2026 03:46:19 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"Wrong password."}
+
+
+22:46:19.953 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:46:19.965 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 50
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testUser","password":"wrongPassword"}
+
+22:46:20.172 [main] DEBUG com.intuit.karate - response time in milliseconds: 205
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: 6281c016f676ae5219f4d9c00aaa775a
+1 < date: Fri, 27 Mar 2026 03:46:19 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"Wrong password."}
+
+
+22:46:28.834 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:46:30.344 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:46:30.884 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 53
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"user_1774583190530","password":"123456"}
+
+22:46:31.425 [main] DEBUG com.intuit.karate - response time in milliseconds: 532
+1 < 200
+1 < content-type: application/json
+1 < x-cloud-trace-context: 63213d1ce97ec84c5e1bd88a0e684ebf
+1 < date: Fri, 27 Mar 2026 03:46:30 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3
+""
+
+
+22:46:31.492 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:46:31.505 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 41
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"user","password":"password"}
+
+22:46:31.790 [main] DEBUG com.intuit.karate - response time in milliseconds: 284
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: 3e57243e787f63117a7de27f6d281bc6
+1 < date: Fri, 27 Mar 2026 03:46:31 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+22:46:31.807 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:46:31.814 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 39
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"test","password":"123456"}
+
+22:46:32.043 [main] DEBUG com.intuit.karate - response time in milliseconds: 228
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: 92d9aede3b7da8829169e30cfe1f14fd
+1 < date: Fri, 27 Mar 2026 03:46:31 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+22:49:33.559 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:49:33.569 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1774583373564
+22:49:33.580 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+22:49:35.161 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+22:49:35.160 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+22:49:35.160 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+22:49:35.161 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+22:49:35.161 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+22:49:35.841 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 50
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.3.1)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testUser","password":"wrongPassword"}
+
+22:49:35.841 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 50
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.3.1)
+1 > Accept-Encoding: gzip,deflate
+{"username":"userTest","password":"passwordWrong"}
+
+22:49:35.841 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 53
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.3.1)
+1 > Accept-Encoding: gzip,deflate
+{"username":"user_1774583375385","password":"123456"}
+
+22:49:35.841 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 45
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.3.1)
+1 > Accept-Encoding: gzip,deflate
+{"username":"adriandiaz","password":"123456"}
+
+22:49:35.841 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 41
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.3.1)
+1 > Accept-Encoding: gzip,deflate
+{"username":"user","password":"password"}
+
+22:49:36.707 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 860
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: dd4a00e6bcfb541f24cfaf2d6109a946
+1 < date: Fri, 27 Mar 2026 03:49:36 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+"Auth_token: YWRyaWFuZGlhejE3NzUxODM="
+
+
+22:49:36.708 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 859
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: 00d49a657cb96bf810b47b7bbf008f58
+1 < date: Fri, 27 Mar 2026 03:49:36 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+22:49:36.708 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 860
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: acce45a1771c9d07045fd67fe30c343c
+1 < date: Fri, 27 Mar 2026 03:49:36 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"Wrong password."}
+
+
+22:49:36.708 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 860
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: 242826cf26366558c9b9665311a5cd86
+1 < date: Fri, 27 Mar 2026 03:49:36 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"Wrong password."}
+
+
+22:49:36.716 [pool-2-thread-1] INFO  com.intuit.karate - [print] "Auth_token: YWRyaWFuZGlhejE3NzUxODM="
+ 
+22:49:36.740 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 898
+1 < 200
+1 < content-type: application/json
+1 < x-cloud-trace-context: 572055b262ccfeb5307edb604d30af28
+1 < date: Fri, 27 Mar 2026 03:49:36 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3
+""
+
+
+22:49:36.760 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+22:49:36.777 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 39
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.3.1)
+1 > Accept-Encoding: gzip,deflate
+{"username":"test","password":"123456"}
+
+22:49:37.035 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 257
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: e25d20d900f7e432efc54b84d3b01f4c
+1 < date: Fri, 27 Mar 2026 03:49:36 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+22:49:37.651 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (1 remaining) classpath:examples/login/login.feature
+22:49:37.799 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:examples/signup/signup.feature
+20:11:15.873 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:11:18.290 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:11:19.030 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 45
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"adriandiaz","password":"123456"}
+
+20:11:20.355 [main] DEBUG com.intuit.karate - response time in milliseconds: 1322
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: 3dcf043508597bb7f0f61ac855711ec3;o=1
+1 < date: Sun, 29 Mar 2026 01:11:20 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+"Auth_token: YWRyaWFuZGlhejE3NzUzNDY="
+
+
+20:11:20.371 [main] INFO  com.intuit.karate - [print] "Auth_token: YWRyaWFuZGlhejE3NzUzNDY="
+ 
+20:11:20.430 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:11:20.455 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 50
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"userTest","password":"passwordWrong"}
+
+20:11:20.726 [main] DEBUG com.intuit.karate - response time in milliseconds: 271
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: 37a30a95b06a0a71ad2f708b24e6882c
+1 < date: Sun, 29 Mar 2026 01:11:20 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"Wrong password."}
+
+
+20:11:20.750 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:11:20.766 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 50
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testUser","password":"wrongPassword"}
+
+20:11:21.114 [main] DEBUG com.intuit.karate - response time in milliseconds: 347
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: 8f66ee76a1331b3024352fb777021c18
+1 < date: Sun, 29 Mar 2026 01:11:21 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"Wrong password."}
+
+
+20:14:37.527 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:14:39.326 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:14:40.028 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 53
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"user_1774746879545","password":"123456"}
+
+20:14:41.112 [main] DEBUG com.intuit.karate - response time in milliseconds: 1084
+1 < 200
+1 < content-type: application/json
+1 < x-cloud-trace-context: 1ecdf6837fbc9fc9f8047256af2afd79
+1 < date: Sun, 29 Mar 2026 01:14:41 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3
+""
+
+
+20:14:41.145 [main] ERROR com.intuit.karate - classpath:examples/signup/signup.feature:15
+And match response == ''
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  '""
+'
+  ''
+
+classpath:examples/signup/signup.feature:15
+20:14:41.245 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:14:41.261 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 41
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"user","password":"password"}
+
+20:14:41.613 [main] DEBUG com.intuit.karate - response time in milliseconds: 352
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: 82e6618a88a4a5c255635e6b21ca5502
+1 < date: Sun, 29 Mar 2026 01:14:41 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+20:14:41.646 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:14:41.670 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 39
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"test","password":"123456"}
+
+20:14:42.026 [main] DEBUG com.intuit.karate - response time in milliseconds: 356
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: eeb225665596fe9e240680ae99788e94
+1 < date: Sun, 29 Mar 2026 01:14:41 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+20:16:38.343 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:16:40.209 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:16:40.823 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 53
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"user_1774747000360","password":"123456"}
+
+20:16:41.528 [main] DEBUG com.intuit.karate - response time in milliseconds: 705
+1 < 200
+1 < content-type: application/json
+1 < x-cloud-trace-context: 9f13de0fcfd1e80052526b9774890ed4;o=1
+1 < date: Sun, 29 Mar 2026 01:16:41 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3
+""
+
+
+20:16:41.579 [main] ERROR com.intuit.karate - classpath:examples/signup/signup.feature:15
+And match response == '""'
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  '""
+'
+  '""'
+
+classpath:examples/signup/signup.feature:15
+20:16:41.629 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:16:41.660 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 41
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"user","password":"password"}
+
+20:16:41.945 [main] DEBUG com.intuit.karate - response time in milliseconds: 284
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: 12b43a4b5594afc51335b72899f1371f
+1 < date: Sun, 29 Mar 2026 01:16:41 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+20:16:41.973 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:16:41.982 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 39
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"test","password":"123456"}
+
+20:16:42.344 [main] DEBUG com.intuit.karate - response time in milliseconds: 362
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: 7cab6afcce7ad9407ad781e0de0730d9
+1 < date: Sun, 29 Mar 2026 01:16:42 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+20:17:58.515 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:18:00.616 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:18:01.281 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 53
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"user_1774747080822","password":"123456"}
+
+20:18:02.167 [main] DEBUG com.intuit.karate - response time in milliseconds: 886
+1 < 200
+1 < content-type: application/json
+1 < x-cloud-trace-context: ea3a39f2e66d0aa0bac2acbf9d07ada2
+1 < date: Sun, 29 Mar 2026 01:18:02 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3
+""
+
+
+20:18:02.260 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:18:02.273 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 41
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"user","password":"password"}
+
+20:18:02.633 [main] DEBUG com.intuit.karate - response time in milliseconds: 360
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: aa2838d2f93b21ab9e7dfb3db88f6bfd
+1 < date: Sun, 29 Mar 2026 01:18:02 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+20:18:02.650 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:18:02.667 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 39
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"test","password":"123456"}
+
+20:18:03.037 [main] DEBUG com.intuit.karate - response time in milliseconds: 370
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: d62ebb0ad8db800792a2ec7e4d2f6afe
+1 < date: Sun, 29 Mar 2026 01:18:02 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"This user already exist."}
+
+
+20:19:50.095 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:19:51.996 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:19:52.596 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 45
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"adriandiaz","password":"123456"}
+
+20:19:53.561 [main] DEBUG com.intuit.karate - response time in milliseconds: 937
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: fcfd3f6924628b069878c06760a1d917
+1 < date: Sun, 29 Mar 2026 01:19:53 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+"Auth_token: YWRyaWFuZGlhejE3NzUzNDc="
+
+
+20:19:53.580 [main] INFO  com.intuit.karate - [print] "Auth_token: YWRyaWFuZGlhejE3NzUzNDc="
+ 
+20:19:53.647 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:19:53.664 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 50
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"userTest","password":"passwordWrong"}
+
+20:19:53.948 [main] DEBUG com.intuit.karate - response time in milliseconds: 284
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: 3e87fc0cd54be372fcb99ad5dda1674f
+1 < date: Sun, 29 Mar 2026 01:19:53 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"Wrong password."}
+
+
+20:19:53.964 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:19:53.981 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 50
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.4)
+1 > Accept-Encoding: gzip,deflate
+{"username":"testUser","password":"wrongPassword"}
+
+20:19:54.347 [main] DEBUG com.intuit.karate - response time in milliseconds: 366
+1 < 200
+1 < content-type: application/json
+1 < vary: Accept-Encoding
+1 < x-cloud-trace-context: 5c271247bc6b327aab3f7cfa1cff984d
+1 < date: Sun, 29 Mar 2026 01:19:54 GMT
+1 < server: Google Frontend
+1 < Transfer-Encoding: chunked
+{"errorMessage":"Wrong password."}
+
+
